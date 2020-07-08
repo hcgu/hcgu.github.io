@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>M文件使用UTF-8编码</title>
+    <url>/2020/07/08/M%E6%96%87%E4%BB%B6%E4%BD%BF%E7%94%A8UTF8%E7%BC%96%E7%A0%81/</url>
+    <content><![CDATA[<ol type="1">
+<li>在MATLAB命令行窗口输入命令：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">feature(&#39;locale&#39;)</span><br></pre></td></tr></table></figure>
+<p>确认是否显示<code>jvmEncoding: 'UTF-8'</code>，如是，则现在已经是UTF-8编码；</p>
+<ol start="2" type="1">
+<li>否则进入MATLAB的<code>bin</code>目录，复制<code>lcdata_utf8.xml</code>到桌面，并修改如下：</li>
+</ol>
+<ul>
+<li>删除</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;encoding name&#x3D;”GBK”&gt;  </span><br><span class="line">  &lt; encoding_alias name&#x3D;”936”&gt;  </span><br><span class="line">&lt;&#x2F;encoding&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;encoding name&#x3D;”UTF-8”&gt;  </span><br><span class="line">  &lt;encoding_alias name&#x3D;”utf8”&#x2F;&gt; </span><br><span class="line">&lt;&#x2F;encoding&gt;</span><br></pre></td></tr></table></figure>
+<p>为</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;encoding name&#x3D;”UTF-8”&gt;  </span><br><span class="line">  &lt;encoding_alias name&#x3D;”utf8”&#x2F;&gt;  </span><br><span class="line">  &lt;encoding_alias name&#x3D;”GBK”&#x2F;&gt;  </span><br><span class="line">&lt;&#x2F;encoding&gt;</span><br></pre></td></tr></table></figure>
+<ol start="3" type="1">
+<li><p>保存上述修改，文件重命名为<code>lcdata.xml</code>，复制（覆盖）到<code>bin</code>目录下；</p></li>
+<li><p>重启MATLAB，检查并确认<code>jvmEncoding: 'UTF-8'</code>。</p></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>MATLAB</tag>
+        <tag>UTF-8</tag>
+      </tags>
+  </entry>
+</search>

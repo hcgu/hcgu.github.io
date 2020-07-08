@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Gu Lab</title>
+  
+  <subtitle>东南大学 顾洪成</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="gulab.cn/"/>
+  <updated>2020-07-08T11:21:07.643Z</updated>
+  <id>gulab.cn/</id>
+  
+  <author>
+    <name>Gu Lab</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>M文件使用UTF-8编码</title>
+    <link href="gulab.cn/2020/07/08/M%E6%96%87%E4%BB%B6%E4%BD%BF%E7%94%A8UTF8%E7%BC%96%E7%A0%81/"/>
+    <id>gulab.cn/2020/07/08/M%E6%96%87%E4%BB%B6%E4%BD%BF%E7%94%A8UTF8%E7%BC%96%E7%A0%81/</id>
+    <published>2020-07-08T11:19:19.000Z</published>
+    <updated>2020-07-08T11:21:07.643Z</updated>
+    
+    <content type="html"><![CDATA[<ol type="1"><li>在MATLAB命令行窗口输入命令：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">feature(&#39;locale&#39;)</span><br></pre></td></tr></table></figure><p>确认是否显示<code>jvmEncoding: 'UTF-8'</code>，如是，则现在已经是UTF-8编码；</p><ol start="2" type="1"><li>否则进入MATLAB的<code>bin</code>目录，复制<code>lcdata_utf8.xml</code>到桌面，并修改如下：</li></ol><ul><li>删除</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;encoding name&#x3D;”GBK”&gt;  </span><br><span class="line">  &lt; encoding_alias name&#x3D;”936”&gt;  </span><br><span class="line">&lt;&#x2F;encoding&gt;</span><br></pre></td></tr></table></figure><ul><li>修改</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;encoding name&#x3D;”UTF-8”&gt;  </span><br><span class="line">  &lt;encoding_alias name&#x3D;”utf8”&#x2F;&gt; </span><br><span class="line">&lt;&#x2F;encoding&gt;</span><br></pre></td></tr></table></figure><p>为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;encoding name&#x3D;”UTF-8”&gt;  </span><br><span class="line">  &lt;encoding_alias name&#x3D;”utf8”&#x2F;&gt;  </span><br><span class="line">  &lt;encoding_alias name&#x3D;”GBK”&#x2F;&gt;  </span><br><span class="line">&lt;&#x2F;encoding&gt;</span><br></pre></td></tr></table></figure><ol start="3" type="1"><li><p>保存上述修改，文件重命名为<code>lcdata.xml</code>，复制（覆盖）到<code>bin</code>目录下；</p></li><li><p>重启MATLAB，检查并确认<code>jvmEncoding: 'UTF-8'</code>。</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol type=&quot;1&quot;&gt;
+&lt;li&gt;在MATLAB命令行窗口输入命令：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span
+      
+    
+    </summary>
+    
+    
+    
+      <category term="MATLAB" scheme="gulab.cn/tags/MATLAB/"/>
+    
+      <category term="UTF-8" scheme="gulab.cn/tags/UTF-8/"/>
+    
+  </entry>
+  
+</feed>
