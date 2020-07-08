@@ -8,6 +8,7 @@
 </ol>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">feature(&#39;locale&#39;)</span><br></pre></td></tr></table></figure>
 <p>确认是否显示<code>jvmEncoding: 'UTF-8'</code>，如是，则现在已经是UTF-8编码；</p>
+<a id="more"></a>
 <ol start="2" type="1">
 <li>否则进入MATLAB的<code>bin</code>目录，复制<code>lcdata_utf8.xml</code>到桌面，并修改如下：</li>
 </ol>
