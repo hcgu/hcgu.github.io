@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="gulab.cn/"/>
-  <updated>2020-07-08T11:57:11.527Z</updated>
+  <updated>2020-07-14T10:01:30.077Z</updated>
   <id>gulab.cn/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>macOS开启硬盘NTFS读写功能</title>
+    <link href="gulab.cn/2020/07/14/macOS-NTFS/"/>
+    <id>gulab.cn/2020/07/14/macOS-NTFS/</id>
+    <published>2020-07-14T09:57:42.000Z</published>
+    <updated>2020-07-14T10:01:30.077Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>已在macOS 10.13.6和TOSHIBA移动硬盘测试通过； 以下操作仅供测试，操作前建议备份数据。</p></blockquote><p>AFPS格式的macOS系统默认隐藏了NTFS写入功能，一般通过安装Paragon NTFS、Mounty等第三方软件来获得读写功能。本教程给出<code>/etc/fstab</code>挂载方式直接读写NTFS的解决方案。</p><ul><li>接入NTFS格式的移动硬盘，记录卷标，如“TOSHIBA”；</li><li>在<code>Terminal</code> 中输入： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi &#x2F;etc&#x2F;fstab</span><br></pre></td></tr></table></figure></li><li>按<code>i</code> 进入编辑模式，输入： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LABEL&#x3D;TOSHIBA none ntfs rw,auto,nobrowse</span><br></pre></td></tr></table></figure></li><li>分别按<code>ESC</code>、<code>:wq</code> 保存并退出修改；</li><li>重启macOS，前往文件夹<code>/Volume/TOSHIBA</code>，检查读写性能。</li></ul><p>注意：偶尔会发生写入项目（如<code>file.zip</code>）变成灰色，且拷贝是提示“不能更改xx中的一个或多个项目,因为它们正在使用中”的警告信息。解决方案如下： 在<code>Terminal</code> 中输入：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xattr -d com.apple.FinderInfo file_path</span><br></pre></td></tr></table></figure><p>其中<code>file_path</code>为<code>file.zip</code>对应的目录，灰色文件恢复至正常即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;已在macOS 10.13.6和TOSHIBA移动硬盘测试通过； 以下操作仅供测试，操作前建议备份数据。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;AFPS格式的macOS系统默认隐藏了NTFS写入功能，一般通过安装Paragon NTFS、Mou
+      
+    
+    </summary>
+    
+    
+      <category term="macOS" scheme="gulab.cn/categories/macOS/"/>
+    
+    
+      <category term="macOS" scheme="gulab.cn/tags/macOS/"/>
+    
+      <category term="NTFS" scheme="gulab.cn/tags/NTFS/"/>
+    
+      <category term="移动硬盘" scheme="gulab.cn/tags/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98/"/>
+    
+  </entry>
   
   <entry>
     <title>M文件使用UTF-8编码</title>
