@@ -13,6 +13,7 @@
 <ol start="2" type="1">
 <li>如果为<code>GBK</code>或<code>GB2312</code>等格式，则进入MATLAB的<code>bin</code>目录，复制<code>lcdata_utf8.xml</code>到桌面，并修改如下：</li>
 </ol>
+<a id="more"></a>
 <ul>
 <li>删除</li>
 </ul>

@@ -51,20 +51,22 @@
     <link href="gulab.cn/2020/07/08/m_file-utf8/"/>
     <id>gulab.cn/2020/07/08/m_file-utf8/</id>
     <published>2020-07-08T11:19:19.000Z</published>
-    <updated>2020-07-14T10:15:30.106Z</updated>
+    <updated>2020-07-14T10:16:56.656Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>测试环境Windows 10，64位专业版；MATLAB 2019a。</p></blockquote><ol type="1"><li>在MATLAB命令行窗口输入命令，检查当前编码方式是否为<code>UTF-8</code>：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">feature(&#39;locale&#39;)</span><br></pre></td></tr></table></figure><ol start="2" type="1"><li>如果为<code>GBK</code>或<code>GB2312</code>等格式，则进入MATLAB的<code>bin</code>目录，复制<code>lcdata_utf8.xml</code>到桌面，并修改如下：</li></ol><ul><li>删除</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;encoding name&#x3D;”GBK”&gt;  </span><br><span class="line">  &lt; encoding_alias name&#x3D;”936”&gt;  </span><br><span class="line">&lt;&#x2F;encoding&gt;</span><br></pre></td></tr></table></figure><ul><li>修改</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;encoding name&#x3D;”UTF-8”&gt;  </span><br><span class="line">  &lt;encoding_alias name&#x3D;”utf8”&#x2F;&gt; </span><br><span class="line">&lt;&#x2F;encoding&gt;</span><br></pre></td></tr></table></figure><p>为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;encoding name&#x3D;”UTF-8”&gt;  </span><br><span class="line">  &lt;encoding_alias name&#x3D;”utf8”&#x2F;&gt;  </span><br><span class="line">  &lt;encoding_alias name&#x3D;”GBK”&#x2F;&gt;  </span><br><span class="line">&lt;&#x2F;encoding&gt;</span><br></pre></td></tr></table></figure><ol start="3" type="1"><li><p>保存上述修改，文件重命名为<code>lcdata.xml</code>，复制（覆盖）到<code>bin</code>目录下；</p></li><li><p>重启MATLAB，检查并确认是否设置成功。</p></li></ol>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>测试环境Windows 10，64位专业版；MATLAB 2019a。</p></blockquote><ol type="1"><li>在MATLAB命令行窗口输入命令，检查当前编码方式是否为<code>UTF-8</code>：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">feature(&#39;locale&#39;)</span><br></pre></td></tr></table></figure><ol start="2" type="1"><li>如果为<code>GBK</code>或<code>GB2312</code>等格式，则进入MATLAB的<code>bin</code>目录，复制<code>lcdata_utf8.xml</code>到桌面，并修改如下：</li></ol><a id="more"></a><ul><li>删除</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;encoding name&#x3D;”GBK”&gt;  </span><br><span class="line">  &lt; encoding_alias name&#x3D;”936”&gt;  </span><br><span class="line">&lt;&#x2F;encoding&gt;</span><br></pre></td></tr></table></figure><ul><li>修改</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;encoding name&#x3D;”UTF-8”&gt;  </span><br><span class="line">  &lt;encoding_alias name&#x3D;”utf8”&#x2F;&gt; </span><br><span class="line">&lt;&#x2F;encoding&gt;</span><br></pre></td></tr></table></figure><p>为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;encoding name&#x3D;”UTF-8”&gt;  </span><br><span class="line">  &lt;encoding_alias name&#x3D;”utf8”&#x2F;&gt;  </span><br><span class="line">  &lt;encoding_alias name&#x3D;”GBK”&#x2F;&gt;  </span><br><span class="line">&lt;&#x2F;encoding&gt;</span><br></pre></td></tr></table></figure><ol start="3" type="1"><li><p>保存上述修改，文件重命名为<code>lcdata.xml</code>，复制（覆盖）到<code>bin</code>目录下；</p></li><li><p>重启MATLAB，检查并确认是否设置成功。</p></li></ol>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;测试环境Windows 10，64位专业版；MATLAB 2019a。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol type=&quot;1&quot;&gt;
 &lt;li&gt;在MATLAB命令行窗口输入命令，检查当前编码方式是否为&lt;code&gt;UTF-8&lt;/code&gt;：&lt;/li&gt;
-      
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;feature(&amp;#39;locale&amp;#39;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol start=&quot;2&quot; type=&quot;1&quot;&gt;
+&lt;li&gt;如果为&lt;code&gt;GBK&lt;/code&gt;或&lt;code&gt;GB2312&lt;/code&gt;等格式，则进入MATLAB的&lt;code&gt;bin&lt;/code&gt;目录，复制&lt;code&gt;lcdata_utf8.xml&lt;/code&gt;到桌面，并修改如下：&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
