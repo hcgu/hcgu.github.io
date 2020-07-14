@@ -3,8 +3,7 @@
   <entry>
     <title>M文件使用UTF-8编码</title>
     <url>/2020/07/08/m_file-utf8/</url>
-    <content><![CDATA[<h1><span id="m文件使用utf-8编码">M文件使用UTF-8编码</span></h1>
-<blockquote>
+    <content><![CDATA[<blockquote>
 <p>测试环境Windows 10，64位专业版；MATLAB 2019a。</p>
 </blockquote>
 <ol type="1">
