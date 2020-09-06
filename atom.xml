@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="gulab.cn/"/>
-  <updated>2020-07-14T10:05:21.384Z</updated>
+  <updated>2020-09-06T11:11:23.546Z</updated>
   <id>gulab.cn/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Anki最简教程</title>
+    <link href="gulab.cn/2020/09/06/anki-intro/"/>
+    <id>gulab.cn/2020/09/06/anki-intro/</id>
+    <published>2020-09-06T11:06:06.000Z</published>
+    <updated>2020-09-06T11:11:23.546Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>本教程在Windows 10企业版（版本号1909，64位）上测试通过。macOS/Linux/Android/iOS请自行测试，提示：iOS版本需付费。</p></blockquote><h3><span id="下载最新版anki软件">下载最新版Anki软件</span></h3><ul><li><p><a href="https://apps.ankiweb.net/" target="_blank" rel="noopener">官网</a>，英文，最新版，下载慢</p></li><li><p><a href="http://www.ankichina.net/" target="_blank" rel="noopener">Anki中国</a>，中文，镜像，有滞后，下载快</p></li></ul><a id="more"></a><p><img src="/2020/09/06/anki-intro/anki00.PNG"></p><h3><span id="安装">安装</span></h3><ul><li><p>直接双击安装即可，可能会提示“OpenGL”错误等信息，如忽略不影响使用，则不必处理。</p></li><li><p>安装成功后打开的界面如下：</p><p><img src="/2020/09/06/anki-intro/anki01.PNG"></p></li></ul><h3><span id="注册账号并登陆">注册账号并登陆</span></h3><ul><li>点击<code>同步</code>，弹出注册界面</li></ul><p><img src="/2020/09/06/anki-intro/anki02.PNG"></p><ul><li>用刚才注册的账号登陆</li></ul><p><img src="/2020/09/06/anki-intro/anki03.PNG"></p><ul><li>如果服务器（网页）端已经存放了<code>记忆库</code>（又称为<code>牌组</code>），则首次登陆时自动同步到本地。</li></ul><h3><span id="新建记忆库或牌组">新建记忆库（或牌组）</span></h3><ul><li>新建记忆库、牌组，命名为&quot;demo&quot;；</li></ul><p><img src="/2020/09/06/anki-intro/anki04.PNG"></p><ul><li><p>在新记忆库、牌组demo中添加卡片，卡片正面为提示内容，如“傅里叶级数公式”，卡片背面为答案，可使用<code>latex</code>语法输入公式（需提前配置latex编译环境），也可直接粘贴图片。</p><p><img src="/2020/09/06/anki-intro/anki05.PNG"></p></li><li><p>可持续添加新卡片，卡片内容可以为文本、公式、图片、音频、视频、网页等。</p></li><li><p>可自定义卡片的模板。</p></li></ul><h3><span id="使用">使用</span></h3><ul><li><p>选择记忆库/牌组，点击“开始学习”；</p></li><li><p>卡片默认显示正面，即提示内容</p><p><img src="/2020/09/06/anki-intro/anki06.PNG"></p></li><li><p>根据提示给出你的答案，答案给定后，点击“显示答案”</p></li></ul><p><img src="/2020/09/06/anki-intro/anki07.PNG"></p><ul><li>检查你的答案是否正确，如果<code>顺利/正确</code>，则Anki会在4天后复习；如果<code>犹豫/想起</code>，则10分钟后复习；如果<code>生疏/错误</code>，则1分钟后复习。这种设置是基于“艾宾浩斯遗忘曲线”理论的，用户可根据自己的情况，对参数&quot;1分钟/10分钟/4天&quot;进行调整。</li></ul><h3><span id="忠告">忠告</span></h3><ul><li>Anki只是工具，没有任何神奇功能，只有善于使用、勤奋刻苦，才能有效辅助记忆；</li><li>内容至上，知识点/错题随手一拍即可复习，痴迷卡牌外观没有意义；</li><li>九层高台，始于垒土。超市排队、食堂吃饭、课间无聊时，不妨选择Anki，而不是微博。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本教程在Windows 10企业版（版本号1909，64位）上测试通过。macOS/Linux/Android/iOS请自行测试，提示：iOS版本需付费。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;下载最新版anki软件&quot;&gt;下载最新版Anki软件&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://apps.ankiweb.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官网&lt;/a&gt;，英文，最新版，下载慢&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.ankichina.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Anki中国&lt;/a&gt;，中文，镜像，有滞后，下载快&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Anki" scheme="gulab.cn/categories/Anki/"/>
+    
+    
+      <category term="Anki" scheme="gulab.cn/tags/Anki/"/>
+    
+      <category term="GTD" scheme="gulab.cn/tags/GTD/"/>
+    
+  </entry>
   
   <entry>
     <title>macOS开启硬盘NTFS读写功能</title>
