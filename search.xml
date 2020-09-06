@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>macOS开启硬盘NTFS读写功能</title>
+    <url>/2020/07/14/macOS-NTFS/</url>
+    <content><![CDATA[<blockquote>
+<p>已在macOS 10.13.6和TOSHIBA移动硬盘测试通过； 以下操作仅供测试，操作前建议备份数据。</p>
+</blockquote>
+<p>AFPS格式的macOS系统默认隐藏了NTFS写入功能，一般通过安装Paragon NTFS、Mounty等第三方软件来获得读写功能。本教程给出<code>/etc/fstab</code>挂载方式直接读写NTFS的解决方案。</p>
+<a id="more"></a>
+<ul>
+<li>接入NTFS格式的移动硬盘，记录卷标，如“TOSHIBA”；</li>
+<li>在<code>Terminal</code> 中输入： <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo vi &#x2F;etc&#x2F;fstab</span><br></pre></td></tr></table></figure></li>
+<li>按<code>i</code> 进入编辑模式，输入： <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">LABEL&#x3D;TOSHIBA none ntfs rw,auto,nobrowse</span><br></pre></td></tr></table></figure></li>
+<li>分别按<code>ESC</code>、<code>:wq</code> 保存并退出修改；</li>
+<li>重启macOS，前往文件夹<code>/Volume/TOSHIBA</code>，检查读写性能。</li>
+</ul>
+<p>注意：偶尔会发生写入项目（如<code>file.zip</code>）变成灰色，且拷贝是提示“不能更改xx中的一个或多个项目，因为它们正在使用中”的警告信息。在<code>Terminal</code> 中输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xattr -d com.apple.FinderInfo file_path</span><br></pre></td></tr></table></figure>
+<p>其中<code>file_path</code>为<code>file.zip</code>对应的目录，灰色文件恢复至正常即可。</p>
+]]></content>
+      <categories>
+        <category>macOS</category>
+      </categories>
+      <tags>
+        <tag>macOS</tag>
+        <tag>NTFS</tag>
+        <tag>移动硬盘</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>M文件使用UTF-8编码</title>
     <url>/2020/07/08/m_file-utf8/</url>
     <content><![CDATA[<blockquote>
@@ -37,34 +65,6 @@
         <tag>UTF-8</tag>
         <tag>GBK</tag>
         <tag>GB2312</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>macOS开启硬盘NTFS读写功能</title>
-    <url>/2020/07/14/macOS-NTFS/</url>
-    <content><![CDATA[<blockquote>
-<p>已在macOS 10.13.6和TOSHIBA移动硬盘测试通过； 以下操作仅供测试，操作前建议备份数据。</p>
-</blockquote>
-<p>AFPS格式的macOS系统默认隐藏了NTFS写入功能，一般通过安装Paragon NTFS、Mounty等第三方软件来获得读写功能。本教程给出<code>/etc/fstab</code>挂载方式直接读写NTFS的解决方案。</p>
-<a id="more"></a>
-<ul>
-<li>接入NTFS格式的移动硬盘，记录卷标，如“TOSHIBA”；</li>
-<li>在<code>Terminal</code> 中输入： <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo vi &#x2F;etc&#x2F;fstab</span><br></pre></td></tr></table></figure></li>
-<li>按<code>i</code> 进入编辑模式，输入： <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">LABEL&#x3D;TOSHIBA none ntfs rw,auto,nobrowse</span><br></pre></td></tr></table></figure></li>
-<li>分别按<code>ESC</code>、<code>:wq</code> 保存并退出修改；</li>
-<li>重启macOS，前往文件夹<code>/Volume/TOSHIBA</code>，检查读写性能。</li>
-</ul>
-<p>注意：偶尔会发生写入项目（如<code>file.zip</code>）变成灰色，且拷贝是提示“不能更改xx中的一个或多个项目，因为它们正在使用中”的警告信息。在<code>Terminal</code> 中输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">xattr -d com.apple.FinderInfo file_path</span><br></pre></td></tr></table></figure>
-<p>其中<code>file_path</code>为<code>file.zip</code>对应的目录，灰色文件恢复至正常即可。</p>
-]]></content>
-      <categories>
-        <category>macOS</category>
-      </categories>
-      <tags>
-        <tag>macOS</tag>
-        <tag>NTFS</tag>
-        <tag>移动硬盘</tag>
       </tags>
   </entry>
 </search>
