@@ -113,12 +113,12 @@ Technical source: <em>StereoLithography Interface Specification</em>, <a href="h
 <p>An STL file consists of a list of facet data. Each facet is uniquely identified by a unit normal (a line perpendicular to the triangle and with a length of 1.0) and by three vertices (corners). The normal and each vertex are specified by three coordinates each, so there is a total of 12 numbers stored for each facet.</p>
 <p>Facet orientation. The facets define the surface of a 3-dimensional object. As such, each facet is part of the boundary between the interior and the exterior of the object. The orientation of the facets (which way is “out” and which way is “in”) is specified redundantly in two ways which must be consistent. First, the direction of the normal is outward. Second, the vertices are listed in counterclockwise order when looking at the object from the outside (<em>right-hand rule</em>). These rules are illustrated in Figure 1.</p>
 <p>
-        <img class="mx-auto" alt="STL-facet" src="/res/STL-formart/STL-facet.gif" />   
+        <img class="mx-auto" alt="STL-facet" src="/rsc/STL-formart/STL-facet.gif" />   
     </p>
 <p>Figure 1. Orientation of a facet is determined by the direction of the unit normal and the order in which the vertices are listed.</p>
 <p><strong>Vertex-to-vertex rule.</strong> Each triangle must share two vertices with each of its adjacent triangles. In other words, a vertex of one triangle cannot lie on the side of another. This is illustrated in Figure 2.</p>
 <p>
-        <img class="mx-auto" alt="v2v_rule" src="/res/STL-formart/v2v_rule.gif" />   
+        <img class="mx-auto" alt="v2v_rule" src="/rsc/STL-formart/v2v_rule.gif" />   
     </p>
 <p>Figure 2. The vertex-to-vertex rule. The left figure shows a violation of the rule. A correct configuration is shown on the right.</p>
 <p>The object represented must be located in the all-positive octant. In other words, all vertex coordinates must be positive-definite (nonnegative and nonzero) numbers. The STL file does not contain any scale information; the coordinates are in arbitrary units.</p>
@@ -445,7 +445,15 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
     <ul class="widget-list">
         
         <li>
-            <a target="_blank" href="http://10.103.0.141:8080" title="在线LaTeX（内网）">在线LaTeX（内网）</a>
+            <a target="_blank" href="https://bme.seu.edu.cn/2017/0901/c463a194551/page.htm" title="东南大学｜生物医学工程">东南大学｜生物医学工程</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="http://10.193.0.141:8080" title="在线LaTeX（内网）">在线LaTeX（内网）</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="http://10.194.0.49:5000" title="NAS（内网）">NAS（内网）</a>
         </li>
         
         <li>
