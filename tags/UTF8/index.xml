@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UTF8 on GuLab.cn</title>
+    <link>http://gulab.cn/tags/UTF8/</link>
+    <description>Recent content in UTF8 on GuLab.cn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 08 Jul 2020 19:19:19 +0800</lastBuildDate><atom:link href="http://gulab.cn/tags/UTF8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>M文件使用UTF-8编码</title>
+      <link>http://gulab.cn/2020/07/08/M-file-utf8-coding.html</link>
+      <pubDate>Wed, 08 Jul 2020 19:19:19 +0800</pubDate>
+      
+      <guid>http://gulab.cn/2020/07/08/M-file-utf8-coding.html</guid>
+      <description>测试环境Windows 10，64位专业版；MATLAB 2019a。 在MATLAB命令行窗口输入命令，检查当前编码方式是否为UTF-8： feature(&amp;#39;locale&amp;#39;) 如果为GBK或GB2312等格式，则进入MATLAB的bin目录，复制lcdata_utf8.xml到桌面，并修改如下： 删除 &amp;lt;encoding name=”GBK</description>
+    </item>
+    
+  </channel>
+</rss>

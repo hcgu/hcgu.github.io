@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>评测 on GuLab.cn</title>
+    <link>http://gulab.cn/tags/%E8%AF%84%E6%B5%8B/</link>
+    <description>Recent content in 评测 on GuLab.cn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 18 Jul 2017 17:55:12 +0800</lastBuildDate><atom:link href="http://gulab.cn/tags/%E8%AF%84%E6%B5%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>U盘、机械硬盘和固态硬盘读写速度测试</title>
+      <link>http://gulab.cn/2017/07/18/flashdisk-HDD-SSD-RW-speed.html</link>
+      <pubDate>Tue, 18 Jul 2017 17:55:12 +0800</pubDate>
+      
+      <guid>http://gulab.cn/2017/07/18/flashdisk-HDD-SSD-RW-speed.html</guid>
+      <description>准备 测试对象 U盘：Kingston DT Micro3.1, 64 GB 移动硬盘：Toshiba DTW 120, 2 TB SSD: Macbook Pro 13&amp;rsquo;, Early 2015, 256 GB SSD: iMac 27&amp;rsquo;, 2017, 512 GB 测试平台 OS：macOS 10.12.5 测试软件: Blackmagic Disk Speed Test, ver3.1 U盘在USB2.0和3.0接口的读写速度 连接USB2.0时，U盘读取速度34.0 MB/s，写入速度11.8 MB/s。 连接USB3.0</description>
+    </item>
+    
+  </channel>
+</rss>

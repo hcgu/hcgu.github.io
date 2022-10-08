@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+
+    <title>The Diamond Structure | GuLab.cn</title>
+    <meta property="og:title" content="The Diamond Structure - GuLab.cn">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2017-06-08T11:12:48&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2017-06-08T11:12:48&#43;08:00'>
+        
+    <meta name="Keywords" content="东南大学,顾洪成,Python">
+    <meta name="description" content="The Diamond Structure">
+        
+    <meta name="author" content="hcgu">
+    <meta property="og:url" content="http://gulab.cn/2017/06/08/The-Diamond-Structure.html">
+    <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+    
+    
+    
+    
+        <link rel="stylesheet" href='/css/douban.css'>
+    
+        <link rel="stylesheet" href='/css/other.css'>
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="http://gulab.cn">
+                        GuLab.cn
+                    </a>
+                
+                <p class="description">东南大学｜顾洪成副教授</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://gulab.cn">首页</a>
+                    
+                    <a  href="http://gulab.cn/research/" title="研究">研究</a>
+                    
+                    <a  href="http://gulab.cn/archives/" title="归档">归档</a>
+                    
+                    <a  href="http://gulab.cn/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">The Diamond Structure</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2017年6月8日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category">
+                <a href='/categories/3D%E6%89%93%E5%8D%B0'>3D打印</a>
+            </span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            <h2 id="diamond-structure">Diamond structure</h2>
+<h3 id="point-set-for-diamond-structure">Point set for diamond structure</h3>
+<pre tabindex="0"><code>0.00	0.00	0.00
+0.50	0.50	0.00
+1.00	1.00	0.00
+0.25	0.25	0.25
+0.75	0.75	0.25
+0.50	0.00	0.50
+1.00	0.50	0.50
+0.50	1.00	0.50
+0.00	0.50	0.50
+0.75	0.25	0.75
+0.25	0.75	0.75
+1.00	0.00	1.00
+0.50	0.50	1.00
+0.00	1.00	1.00
+</code></pre><h3 id="the-path">The path</h3>
+<pre tabindex="0"><code>Path1: 1,4,2,5,3
+Path2: 5,8,11,9,4,6,10,7,5
+Path3: 14,11,13,10,12
+conn1: 3,5
+conn2: 5,14
+</code></pre><p>
+        <img class="mx-auto" alt="diamond_unit" src="/res/diamond-structure/diamond_unit.svg" />   
+    </p>
+<h3 id="diamond_points-for-one-diamond-unit"><em>diamond_Points</em> for one diamond unit</h3>
+<p>Each diamond unit has 14 vertexes, of which 4 (4#, 5#, 10#, 11# in <strong>Table 1</strong>) are inside the cube, 6 (2#, 6#, 7#, 8#, 9#, 13#) are onto each surface of the cube, and the remaining 4 (1#, 3#, 12#, 14#) are at the vertexes of the cube (<strong>Fig 1</strong>).</p>
+<p>
+        <img class="mx-auto" alt="diamond" src="/res/diamond-structure/diamond_unit.png" />   
+    </p>
+<p><strong>Fig 1</strong>. One diamond unit</p>
+<p><strong>Table 1</strong>. Point-set for one diamond unit with $a=1$.</p>
+<pre tabindex="0"><code>0.00	0.00	0.00
+0.50	0.50	0.00
+1.00	1.00	0.00
+0.25	0.25	0.25
+0.75	0.75	0.25
+0.50	0.00	0.50
+1.00	0.50	0.50
+0.50	1.00	0.50
+0.00	0.50	0.50
+0.75	0.25	0.75
+0.25	0.75	0.75
+1.00	0.00	1.00
+0.50	0.50	1.00
+0.00	1.00	1.00
+</code></pre><h3 id="degree-of-unsaturation-u-of-the-vertexes">Degree of unsaturation (U) of the vertexes</h3>
+<p>As in <strong>Fig 1</strong>, there are three types of vertexes in each diamond unit -  <em>inside points</em>, <em>face points</em>, and <em>vertex points</em> (<strong>Table 2</strong>). So the number of <em>effective points</em> of one diamond unit is $$14-24/4=8$$.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>U</th>
+<th>$z$ value</th>
+<th>Num of Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>inside points</td>
+<td>0</td>
+<td>$a/4$, $3a/4$</td>
+<td>4</td>
+</tr>
+<tr>
+<td>face points</td>
+<td>2</td>
+<td>$0$, $a/2$, $a$</td>
+<td>6</td>
+</tr>
+<tr>
+<td>vertex points</td>
+<td>3</td>
+<td>$0$, $a$</td>
+<td>4</td>
+</tr>
+<tr>
+<td>sum</td>
+<td>24</td>
+<td></td>
+<td>14</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-types-of-operations">3 Types of Operations</h3>
+<h4 id="t1">T1</h4>
+<p>Translate the diamond unit with one unit $a$ along one of the axes ($x$, $y$, and $z$). There are 6 equvalent <strong>T1</strong> translation operations in total.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>$x$</th>
+<th>$y$</th>
+<th>$z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T1_{\pm x}$</td>
+<td>$\pm 1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T1_{\pm y}$</td>
+<td>$0$</td>
+<td>$\pm 1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T1_{\pm z}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\pm 1$</td>
+</tr>
+</tbody>
+</table>
+<p>
+        <img class="mx-auto" alt="T1x" src="/res/diamond-structure/diamond_T1x.png" />   
+    </p>
+<p><strong>Fig 2</strong>. Example of <strong>T1</strong> operation, $T1_{+x}$.</p>
+<p>
+        <img class="mx-auto" alt="T1x &#43; T1y" src="/res/diamond-structure/diamond_T1xT1y.png" />   
+    </p>
+<p><strong>Fig 3</strong>. Example of two <strong>T1</strong> operations, $T1_{+x, +y}$.</p>
+<p>
+        <img class="mx-auto" alt="T1x &#43; T1y &#43; T1z" src="/res/diamond-structure/diamond_T1xT1yT1z.png" />   
+    </p>
+<p><strong>Fig 4</strong>. Example of three <strong>T1</strong> operations, $T1_{+x, +y, +z}$.</p>
+<p>
+        <img class="mx-auto" alt="T1_all" src="/res/diamond-structure/diamond_T1_all.png" />   
+    </p>
+<p><strong>Fig 5</strong>. All <strong>T1</strong> operations.</p>
+<h4 id="t2">T2</h4>
+<p>Translate the diamond unit with two steps - each step is  $a$ along one of the axes and the two steps are in different axes. There are 12 equvalent <strong>T2</strong> translation operation in total.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>$x$</th>
+<th>$y$</th>
+<th>$z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T2_{\pm x\pm y}$</td>
+<td>$\pm 1$</td>
+<td>$\pm 1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T2_{\pm y\pm z}$</td>
+<td>$0$</td>
+<td>$\pm 1$</td>
+<td>$\pm 1$</td>
+</tr>
+<tr>
+<td>$T2_{\pm x\pm z}$</td>
+<td>$\pm 1$</td>
+<td>$0$</td>
+<td>$\pm 1$</td>
+</tr>
+</tbody>
+</table>
+<p>
+        <img class="mx-auto" alt="T2xy" src="/res/diamond-structure/diamond_T2xy.png" />   
+    </p>
+<p><strong>Fig 6</strong>. Example of <strong>T2</strong> operation, $T2_{+x-y}$.</p>
+<p>
+        <img class="mx-auto" alt="T2xyT2yz" src="/res/diamond-structure/diamond_T2xyT2yz.png" />   
+    </p>
+<p><strong>Fig 7</strong>. Example of two <strong>T2</strong> operations, $T2_{+x-y, -y+z}$.</p>
+<p>
+        <img class="mx-auto" alt="T2xyT2yzT2zx" src="/res/diamond-structure/diamond_T2xyT2yzT2xz.png" />   
+    </p>
+<p><strong>Fig 8</strong>. Example of three <strong>T2</strong> operations, $T2_{+x-y, -y+z, +x+z}$.</p>
+<p>
+        <img class="mx-auto" alt="T2_all" src="/res/diamond-structure/diamond_T2_all.png" />   
+    </p>
+<p><strong>Fig 9</strong>. All <strong>T2</strong> operations.</p>
+<h4 id="t3">T3</h4>
+<p>Translate the diamond unit with three steps - each step is  $a$ along one of the axes and these steps are in different axes. There are 8 equvalent <strong>T3</strong> translation operation in total.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>$x$</th>
+<th>$y$</th>
+<th>$z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T3_{\pm x\pm y\pm z}$</td>
+<td>$\pm 1$</td>
+<td>$\pm 1$</td>
+<td>$\pm 1$</td>
+</tr>
+</tbody>
+</table>
+<p>
+        <img class="mx-auto" alt="T3xyz" src="/res/diamond-structure/diamond_T3xyz.png" />   
+    </p>
+<p><strong>Fig 10</strong>. Example of <strong>T3</strong> operation, $T3_{+x+y+z}$.</p>
+<p>
+        <img class="mx-auto" alt="T3xyz_all" src="/res/diamond-structure/diamond_T3_all.png" />   
+    </p>
+<p><strong>Fig 11</strong>. All <strong>T3</strong> operations.</p>
+<p>
+        <img class="mx-auto" alt="T_all" src="/res/diamond-structure/diamond_T_all.png" />   
+    </p>
+<p><strong>Fig 12</strong>. All <strong>T1</strong>, <strong>T2</strong>, and <strong>T3</strong> operations.</p>
+
+        </div>
+
+        
+
+
+        
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='/tags/STL'>STL</a></li>
+                
+                <li><a href='/tags/3D%E6%89%93%E5%8D%B0'>3D打印</a></li>
+                
+                <li><a href='/tags/%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92'>路径规划</a></li>
+                
+                <li><a href='/tags/%E9%87%91%E5%88%9A%E7%9F%B3'>金刚石</a></li>
+                
+            </ul>
+            
+            <p> <br/> </p>
+        </div>
+
+        
+
+<div class="post-archive">
+    <h2>相关文章</h2>
+    <ul class="listing">
+        
+        <li><a href="/2017/06/08/Hello-World.html">开通博客</a></li>
+        
+        <li><a href="/archives/">归档</a></li>
+        
+        <li><a href="/search/">搜索</a></li>
+        
+    </ul>
+</div>
+
+
+    </article>
+    
+    
+
+    
+    
+    
+    
+
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2017-2022 <a href="http://gulab.cn">GuLab.cn </a> | All rights reserved.
+        
+    </div>
+    
+</footer>
+
+
+    
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+<style type="text/css">
+div.highlight {
+    position: relative;
+    margin: 1em 0px;
+}
+
+.copy-code {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(78, 78, 78, 0.8);
+    border-radius: var(--radius);
+    padding: 0 5px;
+    font: inherit;
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+    --radius: 8px;
+}
+
+div.highlight:hover .copy-code,pre:hover .copy-code {
+    display: block;
+}
+
+</style>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script src='/js/douban.js'></script>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='http://gulab.cn/search' method="get" accept-charset="utf-8" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://gulab.cn">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://gulab.cn/post/From-Hexo-to-Hugo/" title="博客从Hexo迁移至Hugo">博客从Hexo迁移至Hugo</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/2020/09/06/Anki-Introduction.html" title="Anki最简教程">Anki最简教程</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/2020/07/14/macOS-NTFS-read-write.html" title="macOS开启硬盘NTFS读写功能">macOS开启硬盘NTFS读写功能</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/2020/07/08/M-file-utf8-coding.html" title="M文件使用UTF-8编码">M文件使用UTF-8编码</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/2017/07/18/flashdisk-HDD-SSD-RW-speed.html" title="U盘、机械硬盘和固态硬盘读写速度测试">U盘、机械硬盘和固态硬盘读写速度测试</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/2017/06/09/The-STL-Format.html" title="The STL Format">The STL Format</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/2017/06/09/Greek-Alphabet.html" title="Greek alphabet">Greek alphabet</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/2017/06/08/The-Diamond-Structure.html" title="The Diamond Structure">The Diamond Structure</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/2017/06/08/Hello-World.html" title="开通博客">开通博客</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/categories/'>分类</a></h3>
+<ul class="widget-list">
+    
+    <li><a href="http://gulab.cn/categories/3D%E6%89%93%E5%8D%B0/">3D打印 (2)</a></li>
+    
+    <li><a href="http://gulab.cn/categories/%E5%B7%A5%E5%85%B7/">工具 (6)</a></li>
+    
+    <li><a href="http://gulab.cn/categories/%E8%BD%AF%E4%BB%B6/">软件 (1)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/tags/'>标签</a></h3>
+<div class="tagcloud">
+    
+    <a href="http://gulab.cn/tags/3D%E6%89%93%E5%8D%B0/">3D打印</a>
+    
+    <a href="http://gulab.cn/tags/Anki/">Anki</a>
+    
+    <a href="http://gulab.cn/tags/GitHub/">GitHub</a>
+    
+    <a href="http://gulab.cn/tags/Hexo/">Hexo</a>
+    
+    <a href="http://gulab.cn/tags/Hugo/">Hugo</a>
+    
+    <a href="http://gulab.cn/tags/MATLAB/">MATLAB</a>
+    
+    <a href="http://gulab.cn/tags/NTFS/">NTFS</a>
+    
+    <a href="http://gulab.cn/tags/SSD/">SSD</a>
+    
+    <a href="http://gulab.cn/tags/STL/">STL</a>
+    
+    <a href="http://gulab.cn/tags/UTF8/">UTF8</a>
+    
+    <a href="http://gulab.cn/tags/Windows/">Windows</a>
+    
+    <a href="http://gulab.cn/tags/macOS/">macOS</a>
+    
+    <a href="http://gulab.cn/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+    
+    <a href="http://gulab.cn/tags/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D/">希腊字母</a>
+    
+    <a href="http://gulab.cn/tags/%E8%AE%B0%E5%BF%86/">记忆</a>
+    
+    <a href="http://gulab.cn/tags/%E8%AF%84%E6%B5%8B/">评测</a>
+    
+    <a href="http://gulab.cn/tags/%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92/">路径规划</a>
+    
+    <a href="http://gulab.cn/tags/%E9%87%91%E5%88%9A%E7%9F%B3/">金刚石</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="http://10.103.0.141:8080" title="在线LaTeX（内网）">在线LaTeX（内网）</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://gitee.com/hcgu_seu/" title="Gitee工作区">Gitee工作区</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://gulab.cn/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

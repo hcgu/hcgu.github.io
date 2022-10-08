@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macOS on GuLab.cn</title>
+    <link>http://gulab.cn/tags/macOS/</link>
+    <description>Recent content in macOS on GuLab.cn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 14 Jul 2020 17:57:42 +0800</lastBuildDate><atom:link href="http://gulab.cn/tags/macOS/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS开启硬盘NTFS读写功能</title>
+      <link>http://gulab.cn/2020/07/14/macOS-NTFS-read-write.html</link>
+      <pubDate>Tue, 14 Jul 2020 17:57:42 +0800</pubDate>
+      
+      <guid>http://gulab.cn/2020/07/14/macOS-NTFS-read-write.html</guid>
+      <description>已在macOS 10.13.6和TOSHIBA移动硬盘测试通过； 以下操作仅供测试，操作前建议备份数据。 AFPS格式的macOS系统默认隐藏了NTFS写入功能，一般通过安装Paragon NTFS、Mounty等第三方软件来获得读写功能。本教程给出/etc/fstab挂载方式直接读写N</description>
+    </item>
+    
+  </channel>
+</rss>

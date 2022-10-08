@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>希腊字母 on GuLab.cn</title>
+    <link>http://gulab.cn/tags/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D/</link>
+    <description>Recent content in 希腊字母 on GuLab.cn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 09 Jun 2017 13:54:05 +0800</lastBuildDate><atom:link href="http://gulab.cn/tags/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Greek alphabet</title>
+      <link>http://gulab.cn/2017/06/09/Greek-Alphabet.html</link>
+      <pubDate>Fri, 09 Jun 2017 13:54:05 +0800</pubDate>
+      
+      <guid>http://gulab.cn/2017/06/09/Greek-Alphabet.html</guid>
+      <description>希腊字母：LaTex转Markdown 测试效果如下： No. letter latex md letter latex md 1 $\alpha$ \alpha \alpha A \Alpha A 2 $\beta$ \beta \beta B \Beta B 3 $\gamma$ \gamma \gamma $\Gamma$ \Gamma \Gamma 4 $\delta$ \delta \delta $\Delta$ \Delta \Delta 5 $\epsilon$ \epsilon \epsilon E \Epsilon E 6 $\zeta$ \zeta \zeta Z \Zeta Z 7 $\eta$ \eta \eta H \Eta H 8 $\theta$ \theta \theta $\Theta$ \Theta \Theta 9 $\iota$ \iota \iota I \Iota I 10 $\kappa$ \kappa \kappa K \Kappa K 11 $\lambda$ \lambda \lambda $\Lambda$ \Lambda \Lambda 12 $\mu$ \mu \mu M \Mu M 13 $\nu$ \nu \nu N \Nu N 14 $\xi$ \xi \xi $\Xi$ \Xi \Xi 15 $\omicron$ \o \omicron O \O O 16 $\pi$</description>
+    </item>
+    
+  </channel>
+</rss>

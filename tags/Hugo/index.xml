@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on GuLab.cn</title>
+    <link>http://gulab.cn/tags/Hugo/</link>
+    <description>Recent content in Hugo on GuLab.cn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 08 Oct 2022 09:56:49 +0800</lastBuildDate><atom:link href="http://gulab.cn/tags/Hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客从Hexo迁移至Hugo</title>
+      <link>http://gulab.cn/post/From-Hexo-to-Hugo/</link>
+      <pubDate>Sat, 08 Oct 2022 09:56:49 +0800</pubDate>
+      
+      <guid>http://gulab.cn/post/From-Hexo-to-Hugo/</guid>
+      <description>安装Hugo并建立站点 按以下步骤建立站点blog并使用飞雪无情maupassant主题（感谢），在开浏览器中输入http://localhost:1313查看新创建站点。 1 2 3 4 5 6 7 8 9 brew install hugo hugo new site blog cd blog git init git clone https://github.com/rujews/maupassant-hugo themes/maupassant hugo new post/my-first-post.md hugo server -D 自定义菜单 在config.toml配置文件中新增：</description>
+    </item>
+    
+  </channel>
+</rss>
