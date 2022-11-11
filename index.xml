@@ -6,7 +6,16 @@
     <description>Recent content on GuLab.cn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 08 Oct 2022 09:56:49 +0800</lastBuildDate><atom:link href="http://gulab.cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Nov 2022 23:25:56 +0800</lastBuildDate><atom:link href="http://gulab.cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gitee最简教程（不用git版）</title>
+      <link>http://gulab.cn/post/gitee_intro/</link>
+      <pubDate>Fri, 11 Nov 2022 23:25:56 +0800</pubDate>
+      
+      <guid>http://gulab.cn/post/gitee_intro/</guid>
+      <description>欢迎来到 东南大学-顾洪成 的 工作台，这份Gitee最简教程专为零基础用户快速上手准备，请遵照以下步骤操作。 点击工作台 链接，并将它添加到浏览器的书签栏。 按下图设置 工作台 的组件，仅保留 我的仓库 、我的工作项 、个人数据概览 和 我的周报 共4个组件。 工作台 左侧为导航栏， 我的仓库 是 代码 的子集，后者</description>
+    </item>
+    
     <item>
       <title>博客从Hexo迁移至Hugo</title>
       <link>http://gulab.cn/post/From-Hexo-to-Hugo/</link>
