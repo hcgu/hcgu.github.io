@@ -27,47 +27,47 @@
     
     <item>
       <title>macOS开启硬盘NTFS读写功能</title>
-      <link>http://gulab.cn/2020/07/14/macOS-NTFS-read-write.html</link>
+      <link>http://gulab.cn/post/macOS-NTFS/</link>
       <pubDate>Tue, 14 Jul 2020 17:57:42 +0800</pubDate>
       
-      <guid>http://gulab.cn/2020/07/14/macOS-NTFS-read-write.html</guid>
-      <description>已在macOS 10.13.6和TOSHIBA移动硬盘测试通过； 以下操作仅供测试，操作前建议备份数据。 AFPS格式的macOS系统默认隐藏了NTFS写入功能，一般通过安装Paragon NTFS、Mounty等第三方软件来获得读写功能。本教程给出/etc/fstab挂载方式直接读写N</description>
+      <guid>http://gulab.cn/post/macOS-NTFS/</guid>
+      <description>已在macOS 10.13.6和TOSHIBA移动硬盘测试通过； 以下操作仅供测试，操作前建议备份数据。 AFPS格式的macOS系统默认隐藏了NTFS写入功能，一般通过安装Paragon NTFS、Mounty等第三方软件来获得读写功能。本教程给出 /etc/fstab挂载方式直接读写N</description>
     </item>
     
     <item>
       <title>M文件使用UTF-8编码</title>
-      <link>http://gulab.cn/2020/07/08/M-file-utf8-coding.html</link>
+      <link>http://gulab.cn/post/m_file-utf8/</link>
       <pubDate>Wed, 08 Jul 2020 19:19:19 +0800</pubDate>
       
-      <guid>http://gulab.cn/2020/07/08/M-file-utf8-coding.html</guid>
-      <description>测试环境Windows 10，64位专业版；MATLAB 2019a。 在MATLAB命令行窗口输入命令，检查当前编码方式是否为UTF-8： feature(&amp;#39;locale&amp;#39;) 如果为GBK或GB2312等格式，则进入MATLAB的bin目录，复制lcdata_utf8.xml到桌面，并修改如下： 删除 &amp;lt;encoding name=”GBK</description>
+      <guid>http://gulab.cn/post/m_file-utf8/</guid>
+      <description>测试环境Windows 10，64位专业版；MATLAB 2019a。 在MATLAB命令行窗口输入命令，检查当前编码方式是否为 UTF-8： feature(&amp;#39;locale&amp;#39;) 如果为 GBK或 GB2312等格式，则进入MATLAB的 bin目录，复制 lcdata_utf8.xml到桌面，并修改如下： 删除 &amp;lt;encoding name=”GBK</description>
     </item>
     
     <item>
       <title>U盘、机械硬盘和固态硬盘读写速度测试</title>
-      <link>http://gulab.cn/2017/07/18/flashdisk-HDD-SSD-RW-speed.html</link>
+      <link>http://gulab.cn/post/flashdisk-HDD-SSD-RW-speed/</link>
       <pubDate>Tue, 18 Jul 2017 17:55:12 +0800</pubDate>
       
-      <guid>http://gulab.cn/2017/07/18/flashdisk-HDD-SSD-RW-speed.html</guid>
+      <guid>http://gulab.cn/post/flashdisk-HDD-SSD-RW-speed/</guid>
       <description>准备 测试对象 U盘：Kingston DT Micro3.1, 64 GB 移动硬盘：Toshiba DTW 120, 2 TB SSD: Macbook Pro 13&amp;rsquo;, Early 2015, 256 GB SSD: iMac 27&amp;rsquo;, 2017, 512 GB 测试平台 OS：macOS 10.12.5 测试软件: Blackmagic Disk Speed Test, ver3.1 U盘在USB2.0和3.0接口的读写速度 连接USB2.0时，U盘读取速度34.0 MB/s，写入速度11.8 MB/s。 连接USB3.0</description>
     </item>
     
     <item>
       <title>Greek alphabet</title>
-      <link>http://gulab.cn/2017/06/09/Greek-Alphabet.html</link>
+      <link>http://gulab.cn/post/greek-alphabet/</link>
       <pubDate>Fri, 09 Jun 2017 13:54:05 +0800</pubDate>
       
-      <guid>http://gulab.cn/2017/06/09/Greek-Alphabet.html</guid>
+      <guid>http://gulab.cn/post/greek-alphabet/</guid>
       <description>希腊字母：LaTex转Markdown 测试效果如下： No. letter latex md letter latex md 1 $\alpha$ \alpha \alpha A \Alpha A 2 $\beta$ \beta \beta B \Beta B 3 $\gamma$ \gamma \gamma $\Gamma$ \Gamma \Gamma 4 $\delta$ \delta \delta $\Delta$ \Delta \Delta 5 $\epsilon$ \epsilon \epsilon E \Epsilon E 6 $\zeta$ \zeta \zeta Z \Zeta Z 7 $\eta$ \eta \eta H \Eta H 8 $\theta$ \theta \theta $\Theta$ \Theta \Theta 9 $\iota$ \iota \iota I \Iota I 10 $\kappa$ \kappa \kappa K \Kappa K 11 $\lambda$ \lambda \lambda $\Lambda$ \Lambda \Lambda 12 $\mu$ \mu \mu M \Mu M 13 $\nu$ \nu \nu N \Nu N 14 $\xi$ \xi \xi $\Xi$ \Xi \Xi 15 $\omicron$ \o \omicron O \O O 16 $\pi$</description>
     </item>
     
     <item>
       <title>开通博客</title>
-      <link>http://gulab.cn/2017/06/08/Hello-World.html</link>
+      <link>http://gulab.cn/post/hello-world/</link>
       <pubDate>Thu, 08 Jun 2017 10:47:51 +0800</pubDate>
       
-      <guid>http://gulab.cn/2017/06/08/Hello-World.html</guid>
-      <description>配置SSH key cd ~/.ssh rm * ssh-keygen -t rsa -C mail_address 连按回车3次，得到id_rsa和id_rsa.pub文件，将后者复制到githubNew SSH key，测试是否成功（输入yes，看到successful即可）。 ssh -T git@github.com 再配置 git config --global user.name &amp;#34;name&amp;#34; git config --global user.email &amp;#34;mail_address&amp;#34; 安装Homebrew 将下面代码粘贴在Terminal中: /usr/bin/ruby -e &amp;#34;$(curl</description>
+      <guid>http://gulab.cn/post/hello-world/</guid>
+      <description>配置SSH key cd ~/.ssh rm * ssh-keygen -t rsa -C mail_address 连按回车3次，得到 id_rsa和 id_rsa.pub文件，将后者复制到github New SSH key，测试是否成功（输入 yes，看到successful即可）。 ssh -T git@github.com 再配置 git config --global user.name &amp;#34;name&amp;#34; git config --global user.email &amp;#34;mail_address&amp;#34; 安装Homebrew 将下面代码粘贴在Terminal中: /usr/bin/ruby -e &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;#34;</description>
     </item>
     
   </channel>

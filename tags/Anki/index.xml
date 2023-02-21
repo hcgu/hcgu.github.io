@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 06 Sep 2020 11:12:48 +0800</lastBuildDate><atom:link href="http://gulab.cn/tags/Anki/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Anki最简教程</title>
-      <link>http://gulab.cn/2020/09/06/Anki-Introduction.html</link>
+      <link>http://gulab.cn/post/anki-intro/</link>
       <pubDate>Sun, 06 Sep 2020 11:12:48 +0800</pubDate>
       
-      <guid>http://gulab.cn/2020/09/06/Anki-Introduction.html</guid>
+      <guid>http://gulab.cn/post/anki-intro/</guid>
       <description>本教程在Windows 10企业版（版本号1909，64位）上测试通过。macOS/Linux/Android/iOS请自行测试，提示：iOS版本需付费。 下载最新版Anki软件 官网，英文，最新版，下载慢 Anki中国，中文，镜像，有滞后，下载快 安装 直接双击安装即可，可能会提示“Ope</description>
     </item>
     

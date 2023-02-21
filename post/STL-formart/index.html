@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+
+    <title>The STL Format | GuLab.cn</title>
+    <meta property="og:title" content="The STL Format - GuLab.cn">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2017-06-09T21:04:48&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2017-06-09T21:04:48&#43;08:00'>
+        
+    <meta name="Keywords" content="东南大学,顾洪成,博客">
+    <meta name="description" content="The STL Format">
+        
+    <meta name="author" content="hcgu">
+    <meta property="og:url" content="http://gulab.cn/post/STL-formart/">
+    <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+    
+    
+    
+    
+        <link rel="stylesheet" href='/css/douban.css'>
+    
+        <link rel="stylesheet" href='/css/other.css'>
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="http://gulab.cn">
+                        GuLab.cn
+                    </a>
+                
+                <p class="description">东南大学｜顾洪成副教授</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://gulab.cn">首页</a>
+                    
+                    <a  href="http://gulab.cn/research/" title="研究">研究</a>
+                    
+                    <a  href="http://gulab.cn/lecture/" title="课程">课程</a>
+                    
+                    <a  href="http://gulab.cn/archives/" title="归档">归档</a>
+                    
+                    <a  href="http://gulab.cn/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">The STL Format</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2017年6月9日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category">
+                <a href='/categories/3D%E6%89%93%E5%8D%B0'>3D打印</a>
+            </span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            <h3 id="standard-data-format-of-stl">Standard Data Format of STL</h3>
+<blockquote>
+<p>Reprinted from <a href="http://www.fabbers.com/tech/STL_Format">http://www.fabbers.com/tech/STL_Format</a>
+Reprinted from Section 6.5 of <em>Automated Fabrication</em> by <a href="http://www.mburns.com/">Marshall Burns</a>, Ph.D.
+Technical source: <em>StereoLithography Interface Specification</em>, <a href="https://www.3dsystems.com">3D Systems, Inc.</a>, October 1989</p>
+</blockquote>
+<p>An STL (“StereoLithography”) file is a triangular representation of a 3-dimensional surface geometry. The surface is tessellated or broken down logically into a series of small triangles (facets). Each facet is described by a perpendicular direction and three points representing the vertices (corners) of the triangle. These data are used by a slicing algorithm to determine the cross sections of the 3-dimensional shape to be built by the fabber.</p>
+<h4 id="format-specifications">Format Specifications</h4>
+<p>An STL file consists of a list of facet data. Each facet is uniquely identified by a unit normal (a line perpendicular to the triangle and with a length of 1.0) and by three vertices (corners). The normal and each vertex are specified by three coordinates each, so there is a total of 12 numbers stored for each facet.</p>
+<p>Facet orientation. The facets define the surface of a 3-dimensional object. As such, each facet is part of the boundary between the interior and the exterior of the object. The orientation of the facets (which way is “out” and which way is “in”) is specified redundantly in two ways which must be consistent. First, the direction of the normal is outward. Second, the vertices are listed in counterclockwise order when looking at the object from the outside (<em>right-hand rule</em>). These rules are illustrated in Figure 1.</p>
+<p>
+        <img class="mx-auto" alt="STL-facet" src="/rsc/STL-formart/STL-facet.gif" />   
+    </p>
+<p>Figure 1. Orientation of a facet is determined by the direction of the unit normal and the order in which the vertices are listed.</p>
+<p><strong>Vertex-to-vertex rule.</strong> Each triangle must share two vertices with each of its adjacent triangles. In other words, a vertex of one triangle cannot lie on the side of another. This is illustrated in Figure 2.</p>
+<p>
+        <img class="mx-auto" alt="v2v_rule" src="/rsc/STL-formart/v2v_rule.gif" />   
+    </p>
+<p>Figure 2. The vertex-to-vertex rule. The left figure shows a violation of the rule. A correct configuration is shown on the right.</p>
+<p>The object represented must be located in the all-positive octant. In other words, all vertex coordinates must be positive-definite (nonnegative and nonzero) numbers. The STL file does not contain any scale information; the coordinates are in arbitrary units.</p>
+<p>The official 3D Systems STL specification document states that there is a provision for inclusion of “special attributes for building parameters,” but does not give the format for including such attributes. Also, the document specifies data for the “minimum length of triangle side” and “maximum triangle size,” but these numbers are of dubious meaning.</p>
+<p>Sorting the triangles in ascending <em>z</em>-value order is recommended, but not required, in order to optimize performance of the slice program.</p>
+<p>The STL standard includes two data formats, ASCII and binary. We will introduce ASCII formart only.</p>
+<h4 id="stl-ascii-format">STL ASCII Format</h4>
+<p>The ASCII format is primarily intended for testing new CAD interfaces. The large size of its files makes it impractical for general use. The syntax for an ASCII STL file is as follows:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span>solid name
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">% facet syntax loop</span>
+</span></span><span style="display:flex;"><span>endsolid name
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The syntax for facet unit is:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span><span style="color:#998;font-style:italic">% facet unit syntax</span>
+</span></span><span style="display:flex;"><span>facet normal ni nj nk
+</span></span><span style="display:flex;"><span>    outer loop
+</span></span><span style="display:flex;"><span>        vertex v1x v1y v1z
+</span></span><span style="display:flex;"><span>        vertex v2x v2y v2z
+</span></span><span style="display:flex;"><span>        vertex v3x v3y v3z
+</span></span><span style="display:flex;"><span>    endloop
+</span></span><span style="display:flex;"><span>endfacet
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="more-about-stl-format">More about STL format</h4>
+<blockquote>
+<p><a href="https://all3dp.com/what-is-stl-file-format-extension-3d-printing/">https://all3dp.com/what-is-stl-file-format-extension-3d-printing/</a>
+<a href="https://en.wikipedia.org/wiki/STL_(file_format)">https://en.wikipedia.org/wiki/STL_(file_format)</a></p>
+</blockquote>
+
+        </div>
+
+        
+
+
+        
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='/tags/STL'>STL</a></li>
+                
+                <li><a href='/tags/3D%E6%89%93%E5%8D%B0'>3D打印</a></li>
+                
+                <li><a href='/tags/%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92'>路径规划</a></li>
+                
+            </ul>
+            
+            <p> <br/> </p>
+        </div>
+
+        
+
+<div class="post-archive">
+    <h2>相关文章</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/diamond-structure/">The Diamond Structure</a></li>
+        
+        <li><a href="/post/greek-alphabet/">Greek alphabet</a></li>
+        
+        <li><a href="/post/hello-world/">开通博客</a></li>
+        
+        <li><a href="/archives/">归档</a></li>
+        
+        <li><a href="/search/">搜索</a></li>
+        
+    </ul>
+</div>
+
+
+    </article>
+    
+    
+
+    
+    
+    
+    
+
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2017-2023 <a href="http://gulab.cn">GuLab.cn </a> | All rights reserved.
+        
+    </div>
+    
+</footer>
+
+
+    
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+<style type="text/css">
+div.highlight {
+    position: relative;
+    margin: 1em 0px;
+}
+
+.copy-code {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(78, 78, 78, 0.8);
+    border-radius: var(--radius);
+    padding: 0 5px;
+    font: inherit;
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+    --radius: 8px;
+}
+
+div.highlight:hover .copy-code,pre:hover .copy-code {
+    display: block;
+}
+
+</style>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script src='/js/douban.js'></script>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='http://gulab.cn/search' method="get" accept-charset="utf-8" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://gulab.cn">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://gulab.cn/post/gitee_intro/" title="Gitee最简教程（不用git版）">Gitee最简教程（不用git版）</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/From-Hexo-to-Hugo/" title="博客从Hexo迁移至Hugo">博客从Hexo迁移至Hugo</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/anki-intro/" title="Anki最简教程">Anki最简教程</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/macOS-NTFS/" title="macOS开启硬盘NTFS读写功能">macOS开启硬盘NTFS读写功能</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/m_file-utf8/" title="M文件使用UTF-8编码">M文件使用UTF-8编码</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/flashdisk-HDD-SSD-RW-speed/" title="U盘、机械硬盘和固态硬盘读写速度测试">U盘、机械硬盘和固态硬盘读写速度测试</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/STL-formart/" title="The STL Format">The STL Format</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/greek-alphabet/" title="Greek alphabet">Greek alphabet</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/diamond-structure/" title="The Diamond Structure">The Diamond Structure</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/hello-world/" title="开通博客">开通博客</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/categories/'>分类</a></h3>
+<ul class="widget-list">
+    
+    <li><a href="http://gulab.cn/categories/3D%E6%89%93%E5%8D%B0/">3D打印 (2)</a></li>
+    
+    <li><a href="http://gulab.cn/categories/%E5%B7%A5%E5%85%B7/">工具 (7)</a></li>
+    
+    <li><a href="http://gulab.cn/categories/%E8%BD%AF%E4%BB%B6/">软件 (1)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/tags/'>标签</a></h3>
+<div class="tagcloud">
+    
+    <a href="http://gulab.cn/tags/3D%E6%89%93%E5%8D%B0/">3D打印</a>
+    
+    <a href="http://gulab.cn/tags/Anki/">Anki</a>
+    
+    <a href="http://gulab.cn/tags/GitHub/">GitHub</a>
+    
+    <a href="http://gulab.cn/tags/Gitee/">Gitee</a>
+    
+    <a href="http://gulab.cn/tags/Hexo/">Hexo</a>
+    
+    <a href="http://gulab.cn/tags/Hugo/">Hugo</a>
+    
+    <a href="http://gulab.cn/tags/MATLAB/">MATLAB</a>
+    
+    <a href="http://gulab.cn/tags/NTFS/">NTFS</a>
+    
+    <a href="http://gulab.cn/tags/SSD/">SSD</a>
+    
+    <a href="http://gulab.cn/tags/STL/">STL</a>
+    
+    <a href="http://gulab.cn/tags/UTF8/">UTF8</a>
+    
+    <a href="http://gulab.cn/tags/Windows/">Windows</a>
+    
+    <a href="http://gulab.cn/tags/git/">git</a>
+    
+    <a href="http://gulab.cn/tags/macOS/">macOS</a>
+    
+    <a href="http://gulab.cn/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+    
+    <a href="http://gulab.cn/tags/%E5%B7%A5%E4%BD%9C%E5%8C%BA/">工作区</a>
+    
+    <a href="http://gulab.cn/tags/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D/">希腊字母</a>
+    
+    <a href="http://gulab.cn/tags/%E8%AE%B0%E5%BF%86/">记忆</a>
+    
+    <a href="http://gulab.cn/tags/%E8%AF%84%E6%B5%8B/">评测</a>
+    
+    <a href="http://gulab.cn/tags/%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92/">路径规划</a>
+    
+    <a href="http://gulab.cn/tags/%E9%87%91%E5%88%9A%E7%9F%B3/">金刚石</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://bme.seu.edu.cn/2017/0901/c463a194551/page.htm" title="东南大学｜生物医学工程">东南大学｜生物医学工程</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="http://10.193.0.141:8080" title="在线LaTeX（内网）">在线LaTeX（内网）</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="http://10.194.0.49:5000" title="NAS（内网）">NAS（内网）</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://gitee.com/hcgu_seu/" title="Gitee工作区">Gitee工作区</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://gulab.cn/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

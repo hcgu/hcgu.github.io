@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+
+    <title>Anki最简教程 | GuLab.cn</title>
+    <meta property="og:title" content="Anki最简教程 - GuLab.cn">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2020-09-06T11:12:48&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2020-09-06T11:12:48&#43;08:00'>
+        
+    <meta name="Keywords" content="东南大学,顾洪成,博客">
+    <meta name="description" content="Anki最简教程">
+        
+    <meta name="author" content="hcgu">
+    <meta property="og:url" content="http://gulab.cn/post/anki-intro/">
+    <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+    
+    
+    
+    
+        <link rel="stylesheet" href='/css/douban.css'>
+    
+        <link rel="stylesheet" href='/css/other.css'>
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="http://gulab.cn">
+                        GuLab.cn
+                    </a>
+                
+                <p class="description">东南大学｜顾洪成副教授</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://gulab.cn">首页</a>
+                    
+                    <a  href="http://gulab.cn/research/" title="研究">研究</a>
+                    
+                    <a  href="http://gulab.cn/lecture/" title="课程">课程</a>
+                    
+                    <a  href="http://gulab.cn/archives/" title="归档">归档</a>
+                    
+                    <a  href="http://gulab.cn/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">Anki最简教程</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2020年9月6日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category">
+                <a href='/categories/%E8%BD%AF%E4%BB%B6'>软件</a>
+            </span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            <blockquote>
+<p>本教程在Windows 10企业版（版本号1909，64位）上测试通过。macOS/Linux/Android/iOS请自行测试，提示：iOS版本需付费。</p>
+</blockquote>
+<h3 id="下载最新版anki软件">下载最新版Anki软件</h3>
+<ul>
+<li><a href="https://apps.ankiweb.net/">官网</a>，英文，最新版，下载慢</li>
+<li><a href="http://www.ankichina.net/">Anki中国</a>，中文，镜像，有滞后，下载快</li>
+</ul>
+<p>
+        <img class="mx-auto" alt="" src="/rsc/anki-intro/anki00.PNG" />   
+    </p>
+<h3 id="安装">安装</h3>
+<ul>
+<li>
+<p>直接双击安装即可，可能会提示“OpenGL”错误等信息，如忽略不影响使用，则不必处理。</p>
+</li>
+<li>
+<p>安装成功后打开的界面如下：</p>
+<p>
+        <img class="mx-auto" alt="" src="/rsc/anki-intro/anki01.PNG" />   
+    </p>
+</li>
+</ul>
+<h3 id="注册账号并登陆">注册账号并登陆</h3>
+<ul>
+<li>点击 <code>同步</code>，弹出注册界面</li>
+</ul>
+<p>
+        <img class="mx-auto" alt="" src="/rsc/anki-intro/anki02.PNG" />   
+    </p>
+<ul>
+<li>用刚才注册的账号登陆</li>
+</ul>
+<p>
+        <img class="mx-auto" alt="" src="/rsc/anki-intro/anki03.PNG" />   
+    </p>
+<ul>
+<li>如果服务器（网页）端已经存放了 <code>记忆库</code>（又称为 <code>牌组</code>），则首次登陆时自动同步到本地。</li>
+</ul>
+<h3 id="新建记忆库或牌组">新建记忆库（或牌组）</h3>
+<ul>
+<li>新建记忆库、牌组，命名为&quot;demo&quot;；</li>
+</ul>
+<p>
+        <img class="mx-auto" alt="" src="/rsc/anki-intro/anki04.PNG" />   
+    </p>
+<ul>
+<li>
+<p>在新记忆库、牌组demo中添加卡片，卡片正面为提示内容，如“傅里叶级数公式”，卡片背面为答案，可使用 <code>latex</code>语法输入公式（需提前配置latex编译环境），也可直接粘贴图片。</p>
+<p>
+        <img class="mx-auto" alt="" src="/rsc/anki-intro/anki05.PNG" />   
+    </p>
+</li>
+<li>
+<p>可持续添加新卡片，卡片内容可以为文本、公式、图片、音频、视频、网页等。</p>
+</li>
+<li>
+<p>可自定义卡片的模板。</p>
+</li>
+</ul>
+<h3 id="使用">使用</h3>
+<ul>
+<li>
+<p>选择记忆库/牌组，点击“开始学习”；</p>
+</li>
+<li>
+<p>卡片默认显示正面，即提示内容</p>
+<p>
+        <img class="mx-auto" alt="" src="/rsc/anki-intro/anki06.PNG" />   
+    </p>
+</li>
+<li>
+<p>根据提示给出你的答案，答案给定后，点击“显示答案”</p>
+</li>
+</ul>
+<p>
+        <img class="mx-auto" alt="" src="/rsc/anki-intro/anki07.PNG" />   
+    </p>
+<ul>
+<li>检查你的答案是否正确，如果 <code>顺利/正确</code>，则Anki会在4天后复习；如果 <code>犹豫/想起</code>，则10分钟后复习；如果 <code>生疏/错误</code>，则1分钟后复习。这种设置是基于“艾宾浩斯遗忘曲线”理论的，用户可根据自己的情况，对参数&quot;1分钟/10分钟/4天&quot;进行调整。</li>
+</ul>
+<h3 id="忠告">忠告</h3>
+<ul>
+<li>Anki只是工具，没有任何神奇功能，只有善于使用、勤奋刻苦，才能有效辅助记忆；</li>
+<li>内容至上，知识点/错题随手一拍即可复习，痴迷卡牌外观没有意义；</li>
+<li>九层高台，始于垒土。超市排队、食堂吃饭、课间无聊时，不妨选择Anki，而不是微博。</li>
+</ul>
+
+        </div>
+
+        
+
+
+        
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='/tags/Anki'>Anki</a></li>
+                
+                <li><a href='/tags/%E8%AE%B0%E5%BF%86'>记忆</a></li>
+                
+            </ul>
+            
+            <p> <br/> </p>
+        </div>
+
+        
+
+<div class="post-archive">
+    <h2>相关文章</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/macOS-NTFS/">macOS开启硬盘NTFS读写功能</a></li>
+        
+        <li><a href="/post/m_file-utf8/">M文件使用UTF-8编码</a></li>
+        
+        <li><a href="/post/flashdisk-HDD-SSD-RW-speed/">U盘、机械硬盘和固态硬盘读写速度测试</a></li>
+        
+        <li><a href="/post/STL-formart/">The STL Format</a></li>
+        
+        <li><a href="/post/greek-alphabet/">Greek alphabet</a></li>
+        
+    </ul>
+</div>
+
+
+    </article>
+    
+    
+
+    
+    
+    
+    
+
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2017-2023 <a href="http://gulab.cn">GuLab.cn </a> | All rights reserved.
+        
+    </div>
+    
+</footer>
+
+
+    
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+<style type="text/css">
+div.highlight {
+    position: relative;
+    margin: 1em 0px;
+}
+
+.copy-code {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(78, 78, 78, 0.8);
+    border-radius: var(--radius);
+    padding: 0 5px;
+    font: inherit;
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+    --radius: 8px;
+}
+
+div.highlight:hover .copy-code,pre:hover .copy-code {
+    display: block;
+}
+
+</style>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script src='/js/douban.js'></script>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='http://gulab.cn/search' method="get" accept-charset="utf-8" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://gulab.cn">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://gulab.cn/post/gitee_intro/" title="Gitee最简教程（不用git版）">Gitee最简教程（不用git版）</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/From-Hexo-to-Hugo/" title="博客从Hexo迁移至Hugo">博客从Hexo迁移至Hugo</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/anki-intro/" title="Anki最简教程">Anki最简教程</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/macOS-NTFS/" title="macOS开启硬盘NTFS读写功能">macOS开启硬盘NTFS读写功能</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/m_file-utf8/" title="M文件使用UTF-8编码">M文件使用UTF-8编码</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/flashdisk-HDD-SSD-RW-speed/" title="U盘、机械硬盘和固态硬盘读写速度测试">U盘、机械硬盘和固态硬盘读写速度测试</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/STL-formart/" title="The STL Format">The STL Format</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/greek-alphabet/" title="Greek alphabet">Greek alphabet</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/diamond-structure/" title="The Diamond Structure">The Diamond Structure</a>
+    </li>
+    
+    <li>
+        <a href="http://gulab.cn/post/hello-world/" title="开通博客">开通博客</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/categories/'>分类</a></h3>
+<ul class="widget-list">
+    
+    <li><a href="http://gulab.cn/categories/3D%E6%89%93%E5%8D%B0/">3D打印 (2)</a></li>
+    
+    <li><a href="http://gulab.cn/categories/%E5%B7%A5%E5%85%B7/">工具 (7)</a></li>
+    
+    <li><a href="http://gulab.cn/categories/%E8%BD%AF%E4%BB%B6/">软件 (1)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/tags/'>标签</a></h3>
+<div class="tagcloud">
+    
+    <a href="http://gulab.cn/tags/3D%E6%89%93%E5%8D%B0/">3D打印</a>
+    
+    <a href="http://gulab.cn/tags/Anki/">Anki</a>
+    
+    <a href="http://gulab.cn/tags/GitHub/">GitHub</a>
+    
+    <a href="http://gulab.cn/tags/Gitee/">Gitee</a>
+    
+    <a href="http://gulab.cn/tags/Hexo/">Hexo</a>
+    
+    <a href="http://gulab.cn/tags/Hugo/">Hugo</a>
+    
+    <a href="http://gulab.cn/tags/MATLAB/">MATLAB</a>
+    
+    <a href="http://gulab.cn/tags/NTFS/">NTFS</a>
+    
+    <a href="http://gulab.cn/tags/SSD/">SSD</a>
+    
+    <a href="http://gulab.cn/tags/STL/">STL</a>
+    
+    <a href="http://gulab.cn/tags/UTF8/">UTF8</a>
+    
+    <a href="http://gulab.cn/tags/Windows/">Windows</a>
+    
+    <a href="http://gulab.cn/tags/git/">git</a>
+    
+    <a href="http://gulab.cn/tags/macOS/">macOS</a>
+    
+    <a href="http://gulab.cn/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+    
+    <a href="http://gulab.cn/tags/%E5%B7%A5%E4%BD%9C%E5%8C%BA/">工作区</a>
+    
+    <a href="http://gulab.cn/tags/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D/">希腊字母</a>
+    
+    <a href="http://gulab.cn/tags/%E8%AE%B0%E5%BF%86/">记忆</a>
+    
+    <a href="http://gulab.cn/tags/%E8%AF%84%E6%B5%8B/">评测</a>
+    
+    <a href="http://gulab.cn/tags/%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92/">路径规划</a>
+    
+    <a href="http://gulab.cn/tags/%E9%87%91%E5%88%9A%E7%9F%B3/">金刚石</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://bme.seu.edu.cn/2017/0901/c463a194551/page.htm" title="东南大学｜生物医学工程">东南大学｜生物医学工程</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="http://10.193.0.141:8080" title="在线LaTeX（内网）">在线LaTeX（内网）</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="http://10.194.0.49:5000" title="NAS（内网）">NAS（内网）</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://gitee.com/hcgu_seu/" title="Gitee工作区">Gitee工作区</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://gulab.cn/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

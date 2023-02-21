@@ -9,11 +9,11 @@
     <lastBuildDate>Thu, 08 Jun 2017 10:47:51 +0800</lastBuildDate><atom:link href="http://gulab.cn/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>开通博客</title>
-      <link>http://gulab.cn/2017/06/08/Hello-World.html</link>
+      <link>http://gulab.cn/post/hello-world/</link>
       <pubDate>Thu, 08 Jun 2017 10:47:51 +0800</pubDate>
       
-      <guid>http://gulab.cn/2017/06/08/Hello-World.html</guid>
-      <description>配置SSH key cd ~/.ssh rm * ssh-keygen -t rsa -C mail_address 连按回车3次，得到id_rsa和id_rsa.pub文件，将后者复制到githubNew SSH key，测试是否成功（输入yes，看到successful即可）。 ssh -T git@github.com 再配置 git config --global user.name &amp;#34;name&amp;#34; git config --global user.email &amp;#34;mail_address&amp;#34; 安装Homebrew 将下面代码粘贴在Terminal中: /usr/bin/ruby -e &amp;#34;$(curl</description>
+      <guid>http://gulab.cn/post/hello-world/</guid>
+      <description>配置SSH key cd ~/.ssh rm * ssh-keygen -t rsa -C mail_address 连按回车3次，得到 id_rsa和 id_rsa.pub文件，将后者复制到github New SSH key，测试是否成功（输入 yes，看到successful即可）。 ssh -T git@github.com 再配置 git config --global user.name &amp;#34;name&amp;#34; git config --global user.email &amp;#34;mail_address&amp;#34; 安装Homebrew 将下面代码粘贴在Terminal中: /usr/bin/ruby -e &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;#34;</description>
     </item>
     
   </channel>
