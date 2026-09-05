@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>GuLab.cn</title>
-    <link>https://hcgu.github.io/</link>
+    <link>https://gulab.cn/</link>
     <description>Recent content on GuLab.cn</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>2017-2023 GuLab.cn | All rights reserved.</copyright>
     <lastBuildDate>Sat, 05 Sep 2026 20:00:00 +0800</lastBuildDate>
-    <atom:link href="https://hcgu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gulab.cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 功能测试</title>
-      <link>https://hcgu.github.io/post/hugo-test/</link>
+      <link>https://gulab.cn/post/hugo-test/</link>
       <pubDate>Sat, 05 Sep 2026 20:00:00 +0800</pubDate>
-      <guid>https://hcgu.github.io/post/hugo-test/</guid>
+      <guid>https://gulab.cn/post/hugo-test/</guid>
       <description>测试代码高亮、行内/行间数学公式、本地图片、B站视频嵌入、引用与文本高亮等 Markdown 渲染效果。</description>
     </item>
     <item>
       <title>新测试贴：Mermaid 流程图</title>
-      <link>https://hcgu.github.io/post/mermaid-test/</link>
+      <link>https://gulab.cn/post/mermaid-test/</link>
       <pubDate>Sat, 05 Sep 2026 19:30:00 +0800</pubDate>
-      <guid>https://hcgu.github.io/post/mermaid-test/</guid>
+      <guid>https://gulab.cn/post/mermaid-test/</guid>
       <description>测试 Mermaid 流程图/时序图渲染与代码块复制按钮，验证完成后可删除整个 content/post/mermaid-test/ 目录。</description>
     </item>
     <item>
       <title>Lectures</title>
-      <link>https://hcgu.github.io/lecture/</link>
+      <link>https://gulab.cn/lecture/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0800</pubDate>
-      <guid>https://hcgu.github.io/lecture/</guid>
+      <guid>https://gulab.cn/lecture/</guid>
       <description>&lt;p&gt;面向本科生开设的主讲课程：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;生物系统建模与分析&lt;/li&gt;
@@ -36,9 +36,9 @@
     </item>
     <item>
       <title>About</title>
-      <link>https://hcgu.github.io/about/</link>
+      <link>https://gulab.cn/about/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0800</pubDate>
-      <guid>https://hcgu.github.io/about/</guid>
+      <guid>https://gulab.cn/about/</guid>
       <description>&lt;p&gt;顾洪成，江苏如东人，博士，东南大学生物科学与医学工程学院副教授、至善青年学者。&lt;/p&gt;
 &lt;h2 id=&#34;友情链接&#34;&gt;友情链接&lt;/h2&gt;
 &lt;ul&gt;
@@ -50,9 +50,9 @@
     </item>
     <item>
       <title>Research</title>
-      <link>https://hcgu.github.io/research/</link>
+      <link>https://gulab.cn/research/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0800</pubDate>
-      <guid>https://hcgu.github.io/research/</guid>
+      <guid>https://gulab.cn/research/</guid>
       <description>&lt;p&gt;研究兴趣包括&lt;strong&gt;超结构材料&lt;/strong&gt;、&lt;strong&gt;神经微电极&lt;/strong&gt;、&lt;strong&gt;磁控微机器人&lt;/strong&gt;等。近年来主持自然科学基金、专项等项目近 10 项，并作为骨干参与重点研发计划等项目。在 Nat. Commun.、Adv. Mater.、Adv. Sci.、Small、ACS Appl. Mater. Interf. 等期刊发表论文 20 余篇，H 因子 18。&lt;/p&gt;
 &lt;p&gt;请访问 Google Scholar 或 ORCID 获取更多信息。&lt;/p&gt;
 &lt;h2 id=&#34;研究方向&#34;&gt;研究方向&lt;/h2&gt;

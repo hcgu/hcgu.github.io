@@ -9,16 +9,16 @@
 <meta name="keywords" content="">
 <meta name="description" content="测试 Mermaid 流程图/时序图渲染与代码块复制按钮，验证完成后可删除整个 content/post/mermaid-test/ 目录。">
 <meta name="author" content="">
-<link rel="canonical" href="https://hcgu.github.io/post/mermaid-test/">
+<link rel="canonical" href="https://gulab.cn/post/mermaid-test/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.920ea61fb41f661de48c1a169f2d0b61d47ee7ad1fc9bb7440c0c5aa5ea87b56.css" integrity="sha256-kg6mH7QfZh3kjBoWny0LYdR&#43;560fybt0QMDFql6oe1Y=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://hcgu.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://hcgu.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://hcgu.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://hcgu.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://hcgu.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="https://gulab.cn/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://gulab.cn/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://gulab.cn/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://gulab.cn/apple-touch-icon.png">
+<link rel="mask-icon" href="https://gulab.cn/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://hcgu.github.io/post/mermaid-test/">
+<link rel="alternate" hreflang="en" href="https://gulab.cn/post/mermaid-test/">
 <noscript>
     <style>
         #theme-toggle,
@@ -64,7 +64,34 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><script defer src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js" onload="if (window.mermaid && document.querySelector('.mermaid')) { mermaid.initialize({ startOnLoad: false, theme: 'default' }); mermaid.run({ querySelector: '.mermaid' }); }"></script><meta property="og:url" content="https://hcgu.github.io/post/mermaid-test/">
+</script><script>
+(function () {
+  var P = 'https://cdn.bootcdn.net/ajax/libs/mermaid/11.15.0/';
+  var B = 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/';
+  var n = document.createElement('script');
+  n.src = P + 'mermaid.min.js';
+  n.crossOrigin = 'anonymous';
+  n.onload = function () {
+    var run = function () {
+      if (window.mermaid && document.querySelector('.mermaid')) {
+        mermaid.initialize({ startOnLoad: false, theme: 'default' });
+        mermaid.run({ querySelector: '.mermaid' });
+      }
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', run);
+    } else {
+      run();
+    }
+  };
+  n.onerror = function () {
+    if (n.getAttribute('data-fb')) return;  
+    n.setAttribute('data-fb', '1');
+    n.src = B + 'mermaid.min.js';
+  };
+  document.head.appendChild(n);
+})();
+</script><meta property="og:url" content="https://gulab.cn/post/mermaid-test/">
   <meta property="og:site_name" content="GuLab.cn">
   <meta property="og:title" content="新测试贴：Mermaid 流程图">
   <meta property="og:description" content="测试 Mermaid 流程图/时序图渲染与代码块复制按钮，验证完成后可删除整个 content/post/mermaid-test/ 目录。">
@@ -88,13 +115,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "https://hcgu.github.io/post/"
+      "item": "https://gulab.cn/post/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "新测试贴：Mermaid 流程图",
-      "item": "https://hcgu.github.io/post/mermaid-test/"
+      "item": "https://gulab.cn/post/mermaid-test/"
     }
   ]
 }
@@ -116,14 +143,14 @@
   "dateModified": "2026-09-05T19:30:00+08:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://hcgu.github.io/post/mermaid-test/"
+    "@id": "https://gulab.cn/post/mermaid-test/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "GuLab.cn",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://hcgu.github.io/favicon.ico"
+      "url": "https://gulab.cn/favicon.ico"
     }
   }
 }
@@ -133,7 +160,7 @@
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="https://hcgu.github.io/" accesskey="h" title="GuLab.cn (Alt + H)">GuLab.cn</a>
+            <a href="https://gulab.cn/" accesskey="h" title="GuLab.cn (Alt + H)">GuLab.cn</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -159,27 +186,27 @@
         </div>
         <ul id="menu" class="menu">
             <li>
-                <a href="https://hcgu.github.io/" title="Home">
+                <a href="https://gulab.cn/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="https://hcgu.github.io/research/" title="Research">
+                <a href="https://gulab.cn/research/" title="Research">
                     <span>Research</span>
                 </a>
             </li>
             <li>
-                <a href="https://hcgu.github.io/lecture/" title="Lectures">
+                <a href="https://gulab.cn/lecture/" title="Lectures">
                     <span>Lectures</span>
                 </a>
             </li>
             <li>
-                <a href="https://hcgu.github.io/archives/" title="Archives">
+                <a href="https://gulab.cn/archives/" title="Archives">
                     <span>Archives</span>
                 </a>
             </li>
             <li>
-                <a href="https://hcgu.github.io/about/" title="About">
+                <a href="https://gulab.cn/about/" title="About">
                     <span>About</span>
                 </a>
             </li>

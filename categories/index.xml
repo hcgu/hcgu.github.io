@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on GuLab.cn</title>
-    <link>https://hcgu.github.io/categories/</link>
+    <link>https://gulab.cn/categories/</link>
     <description>Recent content in Categories on GuLab.cn</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>2017-2023 GuLab.cn | All rights reserved.</copyright>
-    <atom:link href="https://hcgu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gulab.cn/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

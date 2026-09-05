@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on GuLab.cn</title>
-    <link>https://hcgu.github.io/post/</link>
+    <link>https://gulab.cn/post/</link>
     <description>Recent content in Posts on GuLab.cn</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>2017-2023 GuLab.cn | All rights reserved.</copyright>
     <lastBuildDate>Sat, 05 Sep 2026 20:00:00 +0800</lastBuildDate>
-    <atom:link href="https://hcgu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gulab.cn/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 功能测试</title>
-      <link>https://hcgu.github.io/post/hugo-test/</link>
+      <link>https://gulab.cn/post/hugo-test/</link>
       <pubDate>Sat, 05 Sep 2026 20:00:00 +0800</pubDate>
-      <guid>https://hcgu.github.io/post/hugo-test/</guid>
+      <guid>https://gulab.cn/post/hugo-test/</guid>
       <description>测试代码高亮、行内/行间数学公式、本地图片、B站视频嵌入、引用与文本高亮等 Markdown 渲染效果。</description>
     </item>
     <item>
       <title>新测试贴：Mermaid 流程图</title>
-      <link>https://hcgu.github.io/post/mermaid-test/</link>
+      <link>https://gulab.cn/post/mermaid-test/</link>
       <pubDate>Sat, 05 Sep 2026 19:30:00 +0800</pubDate>
-      <guid>https://hcgu.github.io/post/mermaid-test/</guid>
+      <guid>https://gulab.cn/post/mermaid-test/</guid>
       <description>测试 Mermaid 流程图/时序图渲染与代码块复制按钮，验证完成后可删除整个 content/post/mermaid-test/ 目录。</description>
     </item>
   </channel>
