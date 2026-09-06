@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>路径规划 on GuLab.cn</title>
+    <link>https://gulab.cn/tags/%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92/</link>
+    <description>Recent content in 路径规划 on GuLab.cn</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>2017-2026 GuLab.cn · 保留所有权利</copyright>
+    <lastBuildDate>Fri, 09 Jun 2017 21:04:48 +0800</lastBuildDate>
+    <atom:link href="https://gulab.cn/tags/%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The STL Format</title>
+      <link>https://gulab.cn/post/STL-formart/</link>
+      <pubDate>Fri, 09 Jun 2017 21:04:48 +0800</pubDate>
+      <guid>https://gulab.cn/post/STL-formart/</guid>
+      <description>&lt;h1 id=&#34;the-stl-format&#34;&gt;The STL Format&lt;/h1&gt;
+&lt;h2 id=&#34;standard-data-format-of-stl&#34;&gt;STANDARD DATA FORMAT OF STL&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Reprinted from &lt;a href=&#34;http://www.fabbers.com/tech/STL_Format&#34;&gt;http://www.fabbers.com/tech/STL_Format&lt;/a&gt;
+Reprinted from Section 6.5 of &lt;em&gt;Automated Fabrication&lt;/em&gt; by Marshall Burns, Ph.D.
+Technical source: StereoLithography Interface Specification, 3D Systems, Inc., October 1989&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;An STL (“StereoLithography”) file is a triangular representation of a 3-dimensional surface geometry. The surface is tessellated or broken down logically into a series of small triangles (facets). Each facet is described by a perpendicular direction and three points representing the vertices (corners) of the triangle. These data are used by a slicing algorithm to determine the cross sections of the 3-dimensional shape to be built by the fabber.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

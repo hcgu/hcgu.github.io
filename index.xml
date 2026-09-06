@@ -5,26 +5,19 @@
     <link>https://gulab.cn/</link>
     <description>Recent content on GuLab.cn</description>
     <generator>Hugo</generator>
-    <language>en-US</language>
-    <copyright>2017-2023 GuLab.cn | All rights reserved.</copyright>
-    <lastBuildDate>Sat, 05 Sep 2026 20:00:00 +0800</lastBuildDate>
+    <language>zh-CN</language>
+    <copyright>2017-2026 GuLab.cn · 保留所有权利</copyright>
+    <lastBuildDate>Sat, 05 Sep 2026 21:30:00 +0800</lastBuildDate>
     <atom:link href="https://gulab.cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo 功能测试</title>
-      <link>https://gulab.cn/post/hugo-test/</link>
-      <pubDate>Sat, 05 Sep 2026 20:00:00 +0800</pubDate>
-      <guid>https://gulab.cn/post/hugo-test/</guid>
-      <description>测试代码高亮、行内/行间数学公式、本地图片、B站视频嵌入、引用与文本高亮等 Markdown 渲染效果。</description>
+      <title>欢迎来到 GuLab</title>
+      <link>https://gulab.cn/post/welcome/</link>
+      <pubDate>Sat, 05 Sep 2026 21:30:00 +0800</pubDate>
+      <guid>https://gulab.cn/post/welcome/</guid>
+      <description>站点导航：我的研究方向、课程与博客内容分区，帮你快速找到需要的内容。</description>
     </item>
     <item>
-      <title>新测试贴：Mermaid 流程图</title>
-      <link>https://gulab.cn/post/mermaid-test/</link>
-      <pubDate>Sat, 05 Sep 2026 19:30:00 +0800</pubDate>
-      <guid>https://gulab.cn/post/mermaid-test/</guid>
-      <description>测试 Mermaid 流程图/时序图渲染与代码块复制按钮，验证完成后可删除整个 content/post/mermaid-test/ 目录。</description>
-    </item>
-    <item>
-      <title>Lectures</title>
+      <title>课程</title>
       <link>https://gulab.cn/lecture/</link>
       <pubDate>Wed, 25 Jan 2023 00:00:00 +0800</pubDate>
       <guid>https://gulab.cn/lecture/</guid>
@@ -35,21 +28,104 @@
 &lt;/ul&gt;</description>
     </item>
     <item>
-      <title>About</title>
+      <title>Gitee最简教程（不用git版）</title>
+      <link>https://gulab.cn/post/gitee_intro/</link>
+      <pubDate>Fri, 11 Nov 2022 23:25:56 +0800</pubDate>
+      <guid>https://gulab.cn/post/gitee_intro/</guid>
+      <description>&lt;p&gt;欢迎来到&lt;strong&gt;东南大学-顾洪成&lt;/strong&gt;的&lt;strong&gt;工作台&lt;/strong&gt;。这份 Gitee 最简教程专为零基础用户快速上手准备：无需安装 git、无需输入命令行，在浏览器中即可完成文件的读写与协作。请遵照以下步骤操作。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;点击&lt;strong&gt;工作台&lt;/strong&gt;链接，并将它添加到浏览器的书签栏。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;1.png：工作台页面&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/1.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按下图设置&lt;strong&gt;工作台&lt;/strong&gt;的组件，仅保留&lt;strong&gt;我的仓库&lt;/strong&gt;、&lt;strong&gt;我的工作项&lt;/strong&gt;、&lt;strong&gt;个人数据概览&lt;/strong&gt;和&lt;strong&gt;我的周报&lt;/strong&gt;共 4 个组件。&lt;strong&gt;工作台&lt;/strong&gt;左侧为导航栏，&lt;strong&gt;我的仓库&lt;/strong&gt;是&lt;strong&gt;代码&lt;/strong&gt;的子集，后者还包括高校开源及内源仓库。请关注右侧顶端的通知，也可关注微信公众号获得实时推送。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;2.png：设置工作台组件&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/2.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;左侧导航栏&lt;strong&gt;代码&lt;/strong&gt;中收集了所有仓库（代码库），包括私有、内源（内部开源）和开源三类。示例中我参与的 &lt;strong&gt;Demo&lt;/strong&gt; 为私有仓库，获授权用户可访问和操作。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;3a.png：仓库列表与导航&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/3a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;3b.png：仓库列表与导航&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/3b.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对仓库（代码库）的操作包括三类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;文件读写&lt;/strong&gt;，包括：新建、修改、删除；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Web IDE&lt;/strong&gt;，一般用于在线撰写 Markdown 文档，或紧急修改代码；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作项&lt;/strong&gt;，包括：需求、任务、缺陷。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;先讲第一类操作，即&lt;strong&gt;文件读写&lt;/strong&gt;。可以通过&lt;strong&gt;文件&lt;/strong&gt;下拉菜单直接新建文件（Markdown 或代码）或文件夹，甚至上传已有文件；也可右击文件进行重命名或删除操作。&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;右击 Markdown 或代码文件，选择&lt;strong&gt;新标签页打开&lt;/strong&gt;，或者在顶端点击&lt;strong&gt;WebIDE&lt;/strong&gt; 均会启动 Web IDE 编辑功能。Web IDE 一般用于在线撰写 Markdown 文档，或紧急修改代码，具体包括以下四个步骤：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;撰写文档或代码；&lt;/li&gt;
+&lt;li&gt;点左上&lt;strong&gt;暂存的更改&lt;/strong&gt;；【该操作对应 git 命令：&lt;code&gt;git add .&lt;/code&gt;】&lt;/li&gt;
+&lt;li&gt;对更新进行备注，并点左中&lt;strong&gt;提交信息&lt;/strong&gt;；【该操作对应 git 命令：&lt;code&gt;git commit -m &amp;quot;msg&amp;quot;&lt;/code&gt;，其中 &lt;code&gt;msg&lt;/code&gt; 自定义】&lt;/li&gt;
+&lt;li&gt;点左下&lt;strong&gt;提交&lt;/strong&gt;；【该操作对应 git 命令：&lt;code&gt;git push -u origin master&lt;/code&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;2a.png：Web IDE 提交过程&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/2a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;2b.png：Web IDE 提交过程&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/2b.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;2c.png：Web IDE 提交过程&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/2c.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第 4 步中对仓库（代码库）的操作还包括&lt;strong&gt;工作项&lt;/strong&gt;，分为&lt;strong&gt;需求、任务、缺陷&lt;/strong&gt;这 3 种。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>博客从Hexo迁移至Hugo</title>
+      <link>https://gulab.cn/post/From-Hexo-to-Hugo/</link>
+      <pubDate>Sat, 08 Oct 2022 09:56:49 +0800</pubDate>
+      <guid>https://gulab.cn/post/From-Hexo-to-Hugo/</guid>
+      <description>&lt;h2 id=&#34;安装-hugo-并建立站点&#34;&gt;安装 Hugo 并建立站点&lt;/h2&gt;
+&lt;p&gt;按以下步骤建立站点 blog 并使用飞雪无情的 maupassant 主题（感谢），在浏览器中输入 &lt;code&gt;http://localhost:1313&lt;/code&gt; 查看新创建站点。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site blog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd blog
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone https://github.com/rujews/maupassant-hugo themes/maupassant
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new post/my-first-post.md
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server -D
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;自定义菜单&#34;&gt;自定义菜单&lt;/h2&gt;
+&lt;p&gt;在 &lt;code&gt;config.toml&lt;/code&gt; 配置文件中新增：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;identifier&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;research&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;研究&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/research/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;identifier&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;archives&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;归档&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/archives/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  [[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;identifier&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;about&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;关于&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/about/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;增加文章归档支持&#34;&gt;增加文章归档支持&lt;/h2&gt;
+&lt;p&gt;新建 &lt;code&gt;content/archives/index.md&lt;/code&gt; 文件，内容如下：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于</title>
       <link>https://gulab.cn/about/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0800</pubDate>
       <guid>https://gulab.cn/about/</guid>
       <description>&lt;p&gt;顾洪成，江苏如东人，博士，东南大学生物科学与医学工程学院副教授、至善青年学者。&lt;/p&gt;
 &lt;h2 id=&#34;友情链接&#34;&gt;友情链接&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://bme.seu.edu.cn/2017/0901/c463a194551/page.htm&#34;&gt;东南大学｜生物医学工程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bme.seu.edu.cn/ghc/main.htm&#34;&gt;顾洪成学院主页&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://10.193.0.141:8080&#34;&gt;在线 LaTeX（内网）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://10.194.0.49:5000&#34;&gt;NAS（内网）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gitee.com/&#34;&gt;Gitee 工作区&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://10.201.29.54:5000&#34;&gt;Gu Data Center（内网）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://edu.gitee.com/hcgu_seu/dashboard&#34;&gt;Gitee 东南大学-顾洪成&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
-      <title>Research</title>
+      <title>研究</title>
       <link>https://gulab.cn/research/</link>
       <pubDate>Sat, 01 Oct 2022 00:00:00 +0800</pubDate>
       <guid>https://gulab.cn/research/</guid>
@@ -76,6 +152,408 @@
 &lt;li&gt;&lt;strong&gt;多目标实时追踪&lt;/strong&gt;；&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;多场耦合&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Anki最简教程</title>
+      <link>https://gulab.cn/post/anki-intro/</link>
+      <pubDate>Sun, 06 Sep 2020 11:12:48 +0800</pubDate>
+      <guid>https://gulab.cn/post/anki-intro/</guid>
+      <description>&lt;p&gt;本教程在 Windows 10 企业版（版本号 1909，64 位）上测试通过。macOS/Linux/Android/iOS 请自行测试。提示：iOS 版本需付费。&lt;/p&gt;
+&lt;h2 id=&#34;下载最新版-anki-软件&#34;&gt;下载最新版 Anki 软件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：英文，最新版，下载慢&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anki 中国&lt;/strong&gt;：中文，镜像，有滞后，下载快&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;anki00.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki00.PNG&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;直接双击安装即可。可能会提示 “OpenGL” 错误等信息，如忽略不影响使用，则不必处理。&lt;/li&gt;
+&lt;li&gt;安装成功后打开软件即可看到主界面。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;anki01.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki01.PNG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;anki02.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki02.PNG&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;注册账号并登录&#34;&gt;注册账号并登录&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;点击&lt;strong&gt;同步&lt;/strong&gt;，弹出注册界面；&lt;/li&gt;
+&lt;li&gt;用刚注册的账号登录；&lt;/li&gt;
+&lt;li&gt;如果服务器（网页）端已经存放了&lt;strong&gt;记忆库&lt;/strong&gt;（又称&lt;strong&gt;牌组&lt;/strong&gt;），则首次登录时自动同步到本地。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;anki03.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki03.PNG&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;新建记忆库或牌组&#34;&gt;新建记忆库（或牌组）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;新建记忆库、牌组，命名为 “demo”；&lt;/li&gt;
+&lt;li&gt;在新记忆库、牌组 demo 中添加卡片：卡片正面为提示内容，如 “傅里叶级数公式”；卡片背面为答案。可使用 LaTeX 语法输入公式（需提前配置 LaTeX 编译环境），也可直接粘贴图片；&lt;/li&gt;
+&lt;li&gt;可持续添加新卡片，卡片内容可以为文本、公式、图片、音频、视频、网页等；&lt;/li&gt;
+&lt;li&gt;可自定义卡片的模板。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;anki04.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki04.PNG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;anki05.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki05.PNG&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;选择记忆库/牌组，点击&lt;strong&gt;开始学习&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;卡片默认显示正面，即提示内容；&lt;/li&gt;
+&lt;li&gt;根据提示给出你的答案，答案给定后，点击&lt;strong&gt;显示答案&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;检查你的答案是否正确：如果&lt;strong&gt;顺利/正确&lt;/strong&gt;，则 Anki 会在 4 天后复习；如果&lt;strong&gt;犹豫/想起&lt;/strong&gt;，则 10 分钟后复习；如果&lt;strong&gt;生疏/错误&lt;/strong&gt;，则 1 分钟后复习。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;anki06.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki06.PNG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;anki07.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki07.PNG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这种设置基于&lt;strong&gt;艾宾浩斯遗忘曲线&lt;/strong&gt;理论，用户可根据自己的情况，对参数 “1 分钟/10 分钟/4 天” 进行调整。&lt;/p&gt;
+&lt;h2 id=&#34;忠告&#34;&gt;忠告&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Anki 只是工具，没有任何神奇功能，只有善于使用、勤奋刻苦，才能有效辅助记忆；&lt;/li&gt;
+&lt;li&gt;内容至上。知识点/错题随手一拍即可复习，痴迷卡牌外观没有意义；&lt;/li&gt;
+&lt;li&gt;九层高台，始于垒土。超市排队、食堂吃饭、课间无聊时，不妨选择 Anki，而不是微博。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>macOS开启硬盘NTFS读写功能</title>
+      <link>https://gulab.cn/post/macOS-NTFS/</link>
+      <pubDate>Tue, 14 Jul 2020 17:57:42 +0800</pubDate>
+      <guid>https://gulab.cn/post/macOS-NTFS/</guid>
+      <description>&lt;p&gt;已在 macOS 10.13.6 和 TOSHIBA 移动硬盘测试通过；以下操作仅供测试，操作前建议备份数据。&lt;/p&gt;
+&lt;p&gt;APFS 格式的 macOS 系统默认隐藏了 NTFS 写入功能，一般通过安装 Paragon NTFS、Mounty 等第三方软件来获得读写功能。本教程给出通过 &lt;code&gt;/etc/fstab&lt;/code&gt; 挂载方式直接读写 NTFS 的解决方案。&lt;/p&gt;
+&lt;h2 id=&#34;操作步骤&#34;&gt;操作步骤&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;接入 NTFS 格式的移动硬盘，记录卷标，如 &lt;code&gt;TOSHIBA&lt;/code&gt;；&lt;/li&gt;
+&lt;li&gt;在 Terminal 中输入：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo vi /etc/fstab
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;按 &lt;code&gt;i&lt;/code&gt; 进入编辑模式，输入：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;LABEL=TOSHIBA none ntfs rw,auto,nobrowse
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;分别按 &lt;code&gt;ESC&lt;/code&gt;、&lt;code&gt;:wq&lt;/code&gt; 保存并退出修改；&lt;/li&gt;
+&lt;li&gt;重启 macOS，前往文件夹 &lt;code&gt;/Volume/TOSHIBA&lt;/code&gt;，检查读写性能。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;注意事项&#34;&gt;注意事项&lt;/h2&gt;
+&lt;p&gt;偶尔会发生写入项目（如 file.zip）变成灰色，且拷贝时提示 “不能更改 xx 中的一个或多个项目，因为它们正在使用中” 的警告信息。在 Terminal 中输入：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xattr -d com.apple.FinderInfo file_path
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;其中 &lt;code&gt;file_path&lt;/code&gt; 为 file.zip 对应的目录，灰色文件恢复至正常即可。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>M文件使用UTF-8编码</title>
+      <link>https://gulab.cn/post/m_file-utf8/</link>
+      <pubDate>Wed, 08 Jul 2020 19:19:19 +0800</pubDate>
+      <guid>https://gulab.cn/post/m_file-utf8/</guid>
+      <description>&lt;p&gt;测试环境：Windows 10，64 位专业版；MATLAB 2019a。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. 在 MATLAB 命令行窗口输入命令，检查当前编码方式是否为 UTF-8：&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;feature(&amp;#39;locale&amp;#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;2. 如果为 GBK 或 GB2312 等格式&lt;/strong&gt;，则进入 MATLAB 的 bin 目录，复制 &lt;code&gt;lcdata_utf8.xml&lt;/code&gt; 到桌面，并修改如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;删除&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;encoding&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;GBK&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;encoding_alias&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;936&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/encoding&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;修改&lt;/strong&gt;以下内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;encoding&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;encoding_alias&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;utf8&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/encoding&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;为&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;encoding&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;encoding_alias&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;utf8&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;encoding_alias&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;GBK&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/encoding&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;3. 保存上述修改，文件重命名为 &lt;code&gt;lcdata.xml&lt;/code&gt;，复制（覆盖）到 bin 目录下；&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. 重启 MATLAB，检查并确认是否设置成功。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>U盘、机械硬盘和固态硬盘读写速度测试</title>
+      <link>https://gulab.cn/post/flashdisk-HDD-SSD-RW-speed/</link>
+      <pubDate>Tue, 18 Jul 2017 17:55:12 +0800</pubDate>
+      <guid>https://gulab.cn/post/flashdisk-HDD-SSD-RW-speed/</guid>
+      <description>&lt;h2 id=&#34;准备&#34;&gt;准备&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;测试对象&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;U 盘：Kingston DT Micro 3.1，64 GB&lt;/li&gt;
+&lt;li&gt;移动硬盘：Toshiba DTW 120，2 TB&lt;/li&gt;
+&lt;li&gt;SSD：Macbook Pro 13&amp;quot;, Early 2015，256 GB&lt;/li&gt;
+&lt;li&gt;SSD：iMac 27&amp;quot;, 2017，512 GB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;Mac.svg：测试设备示意&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/flashdisk-HDD-SSD-RW-speed/Mac.svg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;HDD_Stick.svg：U 盘 / 移动硬盘示意&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/flashdisk-HDD-SSD-RW-speed/HDD_Stick.svg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;测试平台&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OS：macOS 10.12.5&lt;/li&gt;
+&lt;li&gt;测试软件：Blackmagic Disk Speed Test, ver 3.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;DiskSpeedTest.png：Disk Speed Test 测试界面&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/flashdisk-HDD-SSD-RW-speed/DiskSpeedTest.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;u-盘在-usb-20-和-30-接口的读写速度&#34;&gt;U 盘在 USB 2.0 和 3.0 接口的读写速度&lt;/h2&gt;
+&lt;p&gt;连接 USB 2.0 时，U 盘读取速度 &lt;strong&gt;34.0 MB/s&lt;/strong&gt;，写入速度 &lt;strong&gt;11.8 MB/s&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Stick_usb2.png：U 盘 USB 2.0 测速结果&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/flashdisk-HDD-SSD-RW-speed/Stick_usb2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;连接 USB 3.0 时，U 盘读取速度 &lt;strong&gt;98.8 MB/s&lt;/strong&gt;，令人惊讶，写入速度 &lt;strong&gt;17.3 MB/s&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The STL Format</title>
+      <link>https://gulab.cn/post/STL-formart/</link>
+      <pubDate>Fri, 09 Jun 2017 21:04:48 +0800</pubDate>
+      <guid>https://gulab.cn/post/STL-formart/</guid>
+      <description>&lt;h1 id=&#34;the-stl-format&#34;&gt;The STL Format&lt;/h1&gt;
+&lt;h2 id=&#34;standard-data-format-of-stl&#34;&gt;STANDARD DATA FORMAT OF STL&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Reprinted from &lt;a href=&#34;http://www.fabbers.com/tech/STL_Format&#34;&gt;http://www.fabbers.com/tech/STL_Format&lt;/a&gt;
+Reprinted from Section 6.5 of &lt;em&gt;Automated Fabrication&lt;/em&gt; by Marshall Burns, Ph.D.
+Technical source: StereoLithography Interface Specification, 3D Systems, Inc., October 1989&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;An STL (“StereoLithography”) file is a triangular representation of a 3-dimensional surface geometry. The surface is tessellated or broken down logically into a series of small triangles (facets). Each facet is described by a perpendicular direction and three points representing the vertices (corners) of the triangle. These data are used by a slicing algorithm to determine the cross sections of the 3-dimensional shape to be built by the fabber.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Greek alphabet</title>
+      <link>https://gulab.cn/post/greek-alphabet/</link>
+      <pubDate>Fri, 09 Jun 2017 13:54:05 +0800</pubDate>
+      <guid>https://gulab.cn/post/greek-alphabet/</guid>
+      <description>&lt;p&gt;希腊字母：LaTeX 转 Markdown，测试效果如下。&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;No.&lt;/th&gt;
+					&lt;th&gt;小写&lt;/th&gt;
+					&lt;th&gt;大写&lt;/th&gt;
+					&lt;th&gt;LaTeX 小写&lt;/th&gt;
+					&lt;th&gt;LaTeX 大写&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;1&lt;/td&gt;
+					&lt;td&gt;α&lt;/td&gt;
+					&lt;td&gt;Α&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\alpha&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Alpha&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2&lt;/td&gt;
+					&lt;td&gt;β&lt;/td&gt;
+					&lt;td&gt;Β&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\beta&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Beta&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;3&lt;/td&gt;
+					&lt;td&gt;γ&lt;/td&gt;
+					&lt;td&gt;Γ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\gamma&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Gamma&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;4&lt;/td&gt;
+					&lt;td&gt;δ&lt;/td&gt;
+					&lt;td&gt;Δ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\delta&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Delta&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;5&lt;/td&gt;
+					&lt;td&gt;ε&lt;/td&gt;
+					&lt;td&gt;Ε&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\epsilon&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Epsilon&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;6&lt;/td&gt;
+					&lt;td&gt;ζ&lt;/td&gt;
+					&lt;td&gt;Ζ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\zeta&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Zeta&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;7&lt;/td&gt;
+					&lt;td&gt;η&lt;/td&gt;
+					&lt;td&gt;Η&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\eta&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Eta&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;8&lt;/td&gt;
+					&lt;td&gt;θ&lt;/td&gt;
+					&lt;td&gt;Θ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\theta&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Theta&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;9&lt;/td&gt;
+					&lt;td&gt;ι&lt;/td&gt;
+					&lt;td&gt;Ι&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\iota&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Iota&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;10&lt;/td&gt;
+					&lt;td&gt;κ&lt;/td&gt;
+					&lt;td&gt;Κ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\kappa&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Kappa&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;11&lt;/td&gt;
+					&lt;td&gt;λ&lt;/td&gt;
+					&lt;td&gt;Λ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\lambda&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Lambda&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;12&lt;/td&gt;
+					&lt;td&gt;μ&lt;/td&gt;
+					&lt;td&gt;Μ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\mu&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Mu&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;13&lt;/td&gt;
+					&lt;td&gt;ν&lt;/td&gt;
+					&lt;td&gt;Ν&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\nu&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Nu&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;14&lt;/td&gt;
+					&lt;td&gt;ξ&lt;/td&gt;
+					&lt;td&gt;Ξ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\xi&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Xi&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;15&lt;/td&gt;
+					&lt;td&gt;ο&lt;/td&gt;
+					&lt;td&gt;Ο&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\omicron&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Omicron&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;16&lt;/td&gt;
+					&lt;td&gt;π&lt;/td&gt;
+					&lt;td&gt;Π&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\pi&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Pi&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;17&lt;/td&gt;
+					&lt;td&gt;ρ&lt;/td&gt;
+					&lt;td&gt;Ρ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\rho&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Rho&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;18&lt;/td&gt;
+					&lt;td&gt;σ&lt;/td&gt;
+					&lt;td&gt;Σ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\sigma&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Sigma&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;19&lt;/td&gt;
+					&lt;td&gt;τ&lt;/td&gt;
+					&lt;td&gt;Τ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\tau&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Tau&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;20&lt;/td&gt;
+					&lt;td&gt;υ&lt;/td&gt;
+					&lt;td&gt;Υ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\upsilon&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Upsilon&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;21&lt;/td&gt;
+					&lt;td&gt;φ&lt;/td&gt;
+					&lt;td&gt;Φ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\phi&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Phi&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;22&lt;/td&gt;
+					&lt;td&gt;χ&lt;/td&gt;
+					&lt;td&gt;Χ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\chi&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Chi&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;23&lt;/td&gt;
+					&lt;td&gt;ψ&lt;/td&gt;
+					&lt;td&gt;Ψ&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\psi&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Psi&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;24&lt;/td&gt;
+					&lt;td&gt;ω&lt;/td&gt;
+					&lt;td&gt;Ω&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\omega&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;\Omega&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>The Diamond Structure</title>
+      <link>https://gulab.cn/post/diamond-structure/</link>
+      <pubDate>Thu, 08 Jun 2017 11:12:48 +0800</pubDate>
+      <guid>https://gulab.cn/post/diamond-structure/</guid>
+      <description>&lt;h2 id=&#34;point-set-for-diamond-structure&#34;&gt;POINT SET FOR DIAMOND STRUCTURE&lt;/h2&gt;
+&lt;p&gt;坐标点数据（见表 1）：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;0.00	0.00	0.00
+0.50	0.50	0.00
+1.00	1.00	0.00
+0.25	0.25	0.25
+0.75	0.75	0.25
+0.50	0.00	0.50
+1.00	0.50	0.50
+0.50	1.00	0.50
+0.00	0.50	0.50
+0.75	0.25	0.75
+0.25	0.75	0.75
+1.00	0.00	1.00
+0.50	0.50	1.00
+0.00	1.00	1.00
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;the-path&#34;&gt;THE PATH&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Path1：1,4,2,5,3&lt;/li&gt;
+&lt;li&gt;Path2：5,8,11,9,4,6,10,7,5&lt;/li&gt;
+&lt;li&gt;Path3：14,11,13,10,12&lt;/li&gt;
+&lt;li&gt;conn1：3,5&lt;/li&gt;
+&lt;li&gt;conn2：5,14&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;diamond_points-for-one-diamond-unit&#34;&gt;DIAMOND_POINTS FOR ONE DIAMOND UNIT&lt;/h2&gt;
+&lt;p&gt;每个“金刚石单元”（diamond unit）有 14 个顶点，其中：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4 个（4#、5#、10#、11#，见表 1）位于立方体内部；&lt;/li&gt;
+&lt;li&gt;6 个（2#、6#、7#、8#、9#、13#）位于立方体各表面上；&lt;/li&gt;
+&lt;li&gt;剩余 4 个（1#、3#、12#、14#）位于立方体的顶点处。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;diamond_unit.png：单个金刚石单元（14 个顶点）&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/diamond-structure/diamond_unit.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>开通博客</title>
+      <link>https://gulab.cn/post/hello-world/</link>
+      <pubDate>Thu, 08 Jun 2017 10:47:51 +0800</pubDate>
+      <guid>https://gulab.cn/post/hello-world/</guid>
+      <description>&lt;h2 id=&#34;配置-ssh-key&#34;&gt;配置 SSH KEY&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd ~/.ssh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm *
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-keygen -t rsa -C mail_address
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;连按回车 3 次，得到 &lt;code&gt;id_rsa&lt;/code&gt; 和 &lt;code&gt;id_rsa.pub&lt;/code&gt; 文件，将后者复制到 GitHub New SSH key。测试是否成功（输入 yes，看到 successful 即可）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh -T git@github.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;再配置：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global user.name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global user.email &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;mail_address&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;安装-homebrew&#34;&gt;安装 Homebrew&lt;/h2&gt;
+&lt;p&gt;将下面代码粘贴在 Terminal 中：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/bin/ruby -e &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Homebrew 会将套件安装到独立目录，并将文件软链接至 &lt;code&gt;/usr/local&lt;/code&gt;。基本语法如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install wget
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew uninstall wget
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew list
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew home
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew info
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew deps
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;清理旧版本可选&#34;&gt;清理旧版本（可选）&lt;/h2&gt;
+&lt;p&gt;删除 hexo：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Gitee on GuLab.cn</title>
+    <link>https://gulab.cn/tags/Gitee/</link>
+    <description>Recent content in Gitee on GuLab.cn</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>2017-2026 GuLab.cn · 保留所有权利</copyright>
+    <lastBuildDate>Fri, 11 Nov 2022 23:25:56 +0800</lastBuildDate>
+    <atom:link href="https://gulab.cn/tags/Gitee/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gitee最简教程（不用git版）</title>
+      <link>https://gulab.cn/post/gitee_intro/</link>
+      <pubDate>Fri, 11 Nov 2022 23:25:56 +0800</pubDate>
+      <guid>https://gulab.cn/post/gitee_intro/</guid>
+      <description>&lt;p&gt;欢迎来到&lt;strong&gt;东南大学-顾洪成&lt;/strong&gt;的&lt;strong&gt;工作台&lt;/strong&gt;。这份 Gitee 最简教程专为零基础用户快速上手准备：无需安装 git、无需输入命令行，在浏览器中即可完成文件的读写与协作。请遵照以下步骤操作。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;点击&lt;strong&gt;工作台&lt;/strong&gt;链接，并将它添加到浏览器的书签栏。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;1.png：工作台页面&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/1.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按下图设置&lt;strong&gt;工作台&lt;/strong&gt;的组件，仅保留&lt;strong&gt;我的仓库&lt;/strong&gt;、&lt;strong&gt;我的工作项&lt;/strong&gt;、&lt;strong&gt;个人数据概览&lt;/strong&gt;和&lt;strong&gt;我的周报&lt;/strong&gt;共 4 个组件。&lt;strong&gt;工作台&lt;/strong&gt;左侧为导航栏，&lt;strong&gt;我的仓库&lt;/strong&gt;是&lt;strong&gt;代码&lt;/strong&gt;的子集，后者还包括高校开源及内源仓库。请关注右侧顶端的通知，也可关注微信公众号获得实时推送。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;2.png：设置工作台组件&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/2.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;左侧导航栏&lt;strong&gt;代码&lt;/strong&gt;中收集了所有仓库（代码库），包括私有、内源（内部开源）和开源三类。示例中我参与的 &lt;strong&gt;Demo&lt;/strong&gt; 为私有仓库，获授权用户可访问和操作。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;3a.png：仓库列表与导航&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/3a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;3b.png：仓库列表与导航&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/3b.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对仓库（代码库）的操作包括三类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;文件读写&lt;/strong&gt;，包括：新建、修改、删除；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Web IDE&lt;/strong&gt;，一般用于在线撰写 Markdown 文档，或紧急修改代码；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;工作项&lt;/strong&gt;，包括：需求、任务、缺陷。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;先讲第一类操作，即&lt;strong&gt;文件读写&lt;/strong&gt;。可以通过&lt;strong&gt;文件&lt;/strong&gt;下拉菜单直接新建文件（Markdown 或代码）或文件夹，甚至上传已有文件；也可右击文件进行重命名或删除操作。&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;右击 Markdown 或代码文件，选择&lt;strong&gt;新标签页打开&lt;/strong&gt;，或者在顶端点击&lt;strong&gt;WebIDE&lt;/strong&gt; 均会启动 Web IDE 编辑功能。Web IDE 一般用于在线撰写 Markdown 文档，或紧急修改代码，具体包括以下四个步骤：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;撰写文档或代码；&lt;/li&gt;
+&lt;li&gt;点左上&lt;strong&gt;暂存的更改&lt;/strong&gt;；【该操作对应 git 命令：&lt;code&gt;git add .&lt;/code&gt;】&lt;/li&gt;
+&lt;li&gt;对更新进行备注，并点左中&lt;strong&gt;提交信息&lt;/strong&gt;；【该操作对应 git 命令：&lt;code&gt;git commit -m &amp;quot;msg&amp;quot;&lt;/code&gt;，其中 &lt;code&gt;msg&lt;/code&gt; 自定义】&lt;/li&gt;
+&lt;li&gt;点左下&lt;strong&gt;提交&lt;/strong&gt;；【该操作对应 git 命令：&lt;code&gt;git push -u origin master&lt;/code&gt;】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;2a.png：Web IDE 提交过程&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/2a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;2b.png：Web IDE 提交过程&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/2b.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;2c.png：Web IDE 提交过程&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/gitee_intro/2c.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第 4 步中对仓库（代码库）的操作还包括&lt;strong&gt;工作项&lt;/strong&gt;，分为&lt;strong&gt;需求、任务、缺陷&lt;/strong&gt;这 3 种。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

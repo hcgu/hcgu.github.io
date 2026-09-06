@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Gitee最简教程（不用git版） | GuLab.cn</title>
+<meta name="keywords" content="Gitee, git, 工作区">
+<meta name="description" content="欢迎来到东南大学-顾洪成的工作台。这份 Gitee 最简教程专为零基础用户快速上手准备：无需安装 git、无需输入命令行，在浏览器中即可完成文件的读写与协作。请遵照以下步骤操作。
+
+
+点击工作台链接，并将它添加到浏览器的书签栏。
+
+
+
+按下图设置工作台的组件，仅保留我的仓库、我的工作项、个人数据概览和我的周报共 4 个组件。工作台左侧为导航栏，我的仓库是代码的子集，后者还包括高校开源及内源仓库。请关注右侧顶端的通知，也可关注微信公众号获得实时推送。
+
+
+
+左侧导航栏代码中收集了所有仓库（代码库），包括私有、内源（内部开源）和开源三类。示例中我参与的 Demo 为私有仓库，获授权用户可访问和操作。
+
+
+
+
+对仓库（代码库）的操作包括三类：
+
+文件读写，包括：新建、修改、删除；
+Web IDE，一般用于在线撰写 Markdown 文档，或紧急修改代码；
+工作项，包括：需求、任务、缺陷。
+
+
+
+先讲第一类操作，即文件读写。可以通过文件下拉菜单直接新建文件（Markdown 或代码）或文件夹，甚至上传已有文件；也可右击文件进行重命名或删除操作。
+
+
+右击 Markdown 或代码文件，选择新标签页打开，或者在顶端点击WebIDE 均会启动 Web IDE 编辑功能。Web IDE 一般用于在线撰写 Markdown 文档，或紧急修改代码，具体包括以下四个步骤：
+
+撰写文档或代码；
+点左上暂存的更改；【该操作对应 git 命令：git add .】
+对更新进行备注，并点左中提交信息；【该操作对应 git 命令：git commit -m &quot;msg&quot;，其中 msg 自定义】
+点左下提交；【该操作对应 git 命令：git push -u origin master】
+
+
+
+
+
+
+第 4 步中对仓库（代码库）的操作还包括工作项，分为需求、任务、缺陷这 3 种。">
+<meta name="author" content="">
+<link rel="canonical" href="https://gulab.cn/post/gitee_intro/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2ee9e6ded806f8e26cfa6bc6e1255ee2f81caa1f707bdb9d0a21267a0640e929.css" integrity="sha256-Lunm3tgG&#43;OJs&#43;mvG4SVe4vgcqh9we9udCiEmegZA6Sk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://gulab.cn/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://gulab.cn/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://gulab.cn/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://gulab.cn/apple-touch-icon.png">
+<link rel="mask-icon" href="https://gulab.cn/safari-pinned-tab.svg">
+<meta name="theme-color" content="#0a1022">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh-cn" href="https://gulab.cn/post/gitee_intro/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://gulab.cn/post/gitee_intro/">
+  <meta property="og:site_name" content="GuLab.cn">
+  <meta property="og:title" content="Gitee最简教程（不用git版）">
+  <meta property="og:description" content="欢迎来到东南大学-顾洪成的工作台。这份 Gitee 最简教程专为零基础用户快速上手准备：无需安装 git、无需输入命令行，在浏览器中即可完成文件的读写与协作。请遵照以下步骤操作。
+点击工作台链接，并将它添加到浏览器的书签栏。
+按下图设置工作台的组件，仅保留我的仓库、我的工作项、个人数据概览和我的周报共 4 个组件。工作台左侧为导航栏，我的仓库是代码的子集，后者还包括高校开源及内源仓库。请关注右侧顶端的通知，也可关注微信公众号获得实时推送。
+左侧导航栏代码中收集了所有仓库（代码库），包括私有、内源（内部开源）和开源三类。示例中我参与的 Demo 为私有仓库，获授权用户可访问和操作。
+对仓库（代码库）的操作包括三类：
+文件读写，包括：新建、修改、删除； Web IDE，一般用于在线撰写 Markdown 文档，或紧急修改代码； 工作项，包括：需求、任务、缺陷。 先讲第一类操作，即文件读写。可以通过文件下拉菜单直接新建文件（Markdown 或代码）或文件夹，甚至上传已有文件；也可右击文件进行重命名或删除操作。
+右击 Markdown 或代码文件，选择新标签页打开，或者在顶端点击WebIDE 均会启动 Web IDE 编辑功能。Web IDE 一般用于在线撰写 Markdown 文档，或紧急修改代码，具体包括以下四个步骤：
+撰写文档或代码； 点左上暂存的更改；【该操作对应 git 命令：git add .】 对更新进行备注，并点左中提交信息；【该操作对应 git 命令：git commit -m &#34;msg&#34;，其中 msg 自定义】 点左下提交；【该操作对应 git 命令：git push -u origin master】 第 4 步中对仓库（代码库）的操作还包括工作项，分为需求、任务、缺陷这 3 种。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2022-11-11T23:25:56+08:00">
+    <meta property="article:modified_time" content="2022-11-11T23:25:56+08:00">
+    <meta property="article:tag" content="Gitee">
+    <meta property="article:tag" content="Git">
+    <meta property="article:tag" content="工作区">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Gitee最简教程（不用git版）">
+  <meta name="twitter:description" content="欢迎来到东南大学-顾洪成的工作台。这份 Gitee 最简教程专为零基础用户快速上手准备：无需安装 git、无需输入命令行，在浏览器中即可完成文件的读写与协作。请遵照以下步骤操作。
+点击工作台链接，并将它添加到浏览器的书签栏。
+按下图设置工作台的组件，仅保留我的仓库、我的工作项、个人数据概览和我的周报共 4 个组件。工作台左侧为导航栏，我的仓库是代码的子集，后者还包括高校开源及内源仓库。请关注右侧顶端的通知，也可关注微信公众号获得实时推送。
+左侧导航栏代码中收集了所有仓库（代码库），包括私有、内源（内部开源）和开源三类。示例中我参与的 Demo 为私有仓库，获授权用户可访问和操作。
+对仓库（代码库）的操作包括三类：
+文件读写，包括：新建、修改、删除； Web IDE，一般用于在线撰写 Markdown 文档，或紧急修改代码； 工作项，包括：需求、任务、缺陷。 先讲第一类操作，即文件读写。可以通过文件下拉菜单直接新建文件（Markdown 或代码）或文件夹，甚至上传已有文件；也可右击文件进行重命名或删除操作。
+右击 Markdown 或代码文件，选择新标签页打开，或者在顶端点击WebIDE 均会启动 Web IDE 编辑功能。Web IDE 一般用于在线撰写 Markdown 文档，或紧急修改代码，具体包括以下四个步骤：
+撰写文档或代码； 点左上暂存的更改；【该操作对应 git 命令：git add .】 对更新进行备注，并点左中提交信息；【该操作对应 git 命令：git commit -m &#34;msg&#34;，其中 msg 自定义】 点左下提交；【该操作对应 git 命令：git push -u origin master】 第 4 步中对仓库（代码库）的操作还包括工作项，分为需求、任务、缺陷这 3 种。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://gulab.cn/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Gitee最简教程（不用git版）",
+      "item": "https://gulab.cn/post/gitee_intro/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Gitee最简教程（不用git版）",
+  "name": "Gitee最简教程（不用git版）",
+  "description": "欢迎来到东南大学-顾洪成的工作台。这份 Gitee 最简教程专为零基础用户快速上手准备：无需安装 git、无需输入命令行，在浏览器中即可完成文件的读写与协作。请遵照以下步骤操作。\n点击工作台链接，并将它添加到浏览器的书签栏。\n按下图设置工作台的组件，仅保留我的仓库、我的工作项、个人数据概览和我的周报共 4 个组件。工作台左侧为导航栏，我的仓库是代码的子集，后者还包括高校开源及内源仓库。请关注右侧顶端的通知，也可关注微信公众号获得实时推送。\n左侧导航栏代码中收集了所有仓库（代码库），包括私有、内源（内部开源）和开源三类。示例中我参与的 Demo 为私有仓库，获授权用户可访问和操作。\n对仓库（代码库）的操作包括三类：\n文件读写，包括：新建、修改、删除； Web IDE，一般用于在线撰写 Markdown 文档，或紧急修改代码； 工作项，包括：需求、任务、缺陷。 先讲第一类操作，即文件读写。可以通过文件下拉菜单直接新建文件（Markdown 或代码）或文件夹，甚至上传已有文件；也可右击文件进行重命名或删除操作。\n右击 Markdown 或代码文件，选择新标签页打开，或者在顶端点击WebIDE 均会启动 Web IDE 编辑功能。Web IDE 一般用于在线撰写 Markdown 文档，或紧急修改代码，具体包括以下四个步骤：\n撰写文档或代码； 点左上暂存的更改；【该操作对应 git 命令：git add .】 对更新进行备注，并点左中提交信息；【该操作对应 git 命令：git commit -m \u0026quot;msg\u0026quot;，其中 msg 自定义】 点左下提交；【该操作对应 git 命令：git push -u origin master】 第 4 步中对仓库（代码库）的操作还包括工作项，分为需求、任务、缺陷这 3 种。\n",
+  "keywords": [
+    "Gitee", "git", "工作区"
+  ],
+  "articleBody": "欢迎来到东南大学-顾洪成的工作台。这份 Gitee 最简教程专为零基础用户快速上手准备：无需安装 git、无需输入命令行，在浏览器中即可完成文件的读写与协作。请遵照以下步骤操作。\n点击工作台链接，并将它添加到浏览器的书签栏。\n按下图设置工作台的组件，仅保留我的仓库、我的工作项、个人数据概览和我的周报共 4 个组件。工作台左侧为导航栏，我的仓库是代码的子集，后者还包括高校开源及内源仓库。请关注右侧顶端的通知，也可关注微信公众号获得实时推送。\n左侧导航栏代码中收集了所有仓库（代码库），包括私有、内源（内部开源）和开源三类。示例中我参与的 Demo 为私有仓库，获授权用户可访问和操作。\n对仓库（代码库）的操作包括三类：\n文件读写，包括：新建、修改、删除； Web IDE，一般用于在线撰写 Markdown 文档，或紧急修改代码； 工作项，包括：需求、任务、缺陷。 先讲第一类操作，即文件读写。可以通过文件下拉菜单直接新建文件（Markdown 或代码）或文件夹，甚至上传已有文件；也可右击文件进行重命名或删除操作。\n右击 Markdown 或代码文件，选择新标签页打开，或者在顶端点击WebIDE 均会启动 Web IDE 编辑功能。Web IDE 一般用于在线撰写 Markdown 文档，或紧急修改代码，具体包括以下四个步骤：\n撰写文档或代码； 点左上暂存的更改；【该操作对应 git 命令：git add .】 对更新进行备注，并点左中提交信息；【该操作对应 git 命令：git commit -m \"msg\"，其中 msg 自定义】 点左下提交；【该操作对应 git 命令：git push -u origin master】 第 4 步中对仓库（代码库）的操作还包括工作项，分为需求、任务、缺陷这 3 种。\n需求：指工作中缺少的条件，如仿真计算遇到硬件瓶颈需升级内存、实验需购买某试剂等； 任务：是分解出来的阶段工作，一般带有指标； 缺陷：是回溯工作时发现待改进的、甚至错误的，如汇报代码 bug、发现公式错误等。 事实上，只需获得仓库地址（而不登录工作台）即可完成上述所有操作，例如通过 Issue 也能发起工作项。但这种 Issue 模式不要求负责人、截止时间，甚至主体部分空白都能提交成功；它过于松散，甚至无法更新到工作台，从而影响工作效率。因此我们约定：慎用 Issue 模式。\n",
+  "wordCount" : "68",
+  "inLanguage": "zh-cn",
+  "datePublished": "2022-11-11T23:25:56+08:00",
+  "dateModified": "2022-11-11T23:25:56+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gulab.cn/post/gitee_intro/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GuLab.cn",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://gulab.cn/favicon-32x32.png"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://gulab.cn/" accesskey="h" title="GuLab.cn (Alt + H)">GuLab.cn</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://gulab.cn/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://gulab.cn/research/" title="研究">
+                    <span>研究</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://gulab.cn/lecture/" title="课程">
+                    <span>课程</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://gulab.cn/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://gulab.cn/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://gulab.cn/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Gitee最简教程（不用git版）
+    </h1>
+    <div class="post-meta"><span title='2022-11-11 23:25:56 +0800 CST'>2022年11月11日</span>&nbsp;·&nbsp;<span>3 分钟</span>&nbsp;·&nbsp;<span>811 字</span>
+
+</div>
+  </header> 
+
+  <div class="post-content md-content"><p>欢迎来到<strong>东南大学-顾洪成</strong>的<strong>工作台</strong>。这份 Gitee 最简教程专为零基础用户快速上手准备：无需安装 git、无需输入命令行，在浏览器中即可完成文件的读写与协作。请遵照以下步骤操作。</p>
+<ol>
+<li>
+<p>点击<strong>工作台</strong>链接，并将它添加到浏览器的书签栏。</p>
+<p><img alt="1.png：工作台页面" loading="lazy" src="/post/gitee_intro/1.png"></p>
+</li>
+<li>
+<p>按下图设置<strong>工作台</strong>的组件，仅保留<strong>我的仓库</strong>、<strong>我的工作项</strong>、<strong>个人数据概览</strong>和<strong>我的周报</strong>共 4 个组件。<strong>工作台</strong>左侧为导航栏，<strong>我的仓库</strong>是<strong>代码</strong>的子集，后者还包括高校开源及内源仓库。请关注右侧顶端的通知，也可关注微信公众号获得实时推送。</p>
+<p><img alt="2.png：设置工作台组件" loading="lazy" src="/post/gitee_intro/2.png"></p>
+</li>
+<li>
+<p>左侧导航栏<strong>代码</strong>中收集了所有仓库（代码库），包括私有、内源（内部开源）和开源三类。示例中我参与的 <strong>Demo</strong> 为私有仓库，获授权用户可访问和操作。</p>
+<p><img alt="3a.png：仓库列表与导航" loading="lazy" src="/post/gitee_intro/3a.png"></p>
+<p><img alt="3b.png：仓库列表与导航" loading="lazy" src="/post/gitee_intro/3b.png"></p>
+</li>
+<li>
+<p>对仓库（代码库）的操作包括三类：</p>
+<ul>
+<li><strong>文件读写</strong>，包括：新建、修改、删除；</li>
+<li><strong>Web IDE</strong>，一般用于在线撰写 Markdown 文档，或紧急修改代码；</li>
+<li><strong>工作项</strong>，包括：需求、任务、缺陷。</li>
+</ul>
+</li>
+</ol>
+<p>先讲第一类操作，即<strong>文件读写</strong>。可以通过<strong>文件</strong>下拉菜单直接新建文件（Markdown 或代码）或文件夹，甚至上传已有文件；也可右击文件进行重命名或删除操作。</p>
+<ol start="5">
+<li>
+<p>右击 Markdown 或代码文件，选择<strong>新标签页打开</strong>，或者在顶端点击<strong>WebIDE</strong> 均会启动 Web IDE 编辑功能。Web IDE 一般用于在线撰写 Markdown 文档，或紧急修改代码，具体包括以下四个步骤：</p>
+<ul>
+<li>撰写文档或代码；</li>
+<li>点左上<strong>暂存的更改</strong>；【该操作对应 git 命令：<code>git add .</code>】</li>
+<li>对更新进行备注，并点左中<strong>提交信息</strong>；【该操作对应 git 命令：<code>git commit -m &quot;msg&quot;</code>，其中 <code>msg</code> 自定义】</li>
+<li>点左下<strong>提交</strong>；【该操作对应 git 命令：<code>git push -u origin master</code>】</li>
+</ul>
+<p><img alt="2a.png：Web IDE 提交过程" loading="lazy" src="/post/gitee_intro/2a.png"></p>
+<p><img alt="2b.png：Web IDE 提交过程" loading="lazy" src="/post/gitee_intro/2b.png"></p>
+<p><img alt="2c.png：Web IDE 提交过程" loading="lazy" src="/post/gitee_intro/2c.png"></p>
+</li>
+<li>
+<p>第 4 步中对仓库（代码库）的操作还包括<strong>工作项</strong>，分为<strong>需求、任务、缺陷</strong>这 3 种。</p>
+<ul>
+<li><strong>需求</strong>：指工作中缺少的条件，如仿真计算遇到硬件瓶颈需升级内存、实验需购买某试剂等；</li>
+<li><strong>任务</strong>：是分解出来的阶段工作，一般带有指标；</li>
+<li><strong>缺陷</strong>：是回溯工作时发现待改进的、甚至错误的，如汇报代码 bug、发现公式错误等。</li>
+</ul>
+</li>
+</ol>
+<p>事实上，只需获得仓库地址（而不登录<strong>工作台</strong>）即可完成上述所有操作，例如通过 <strong>Issue</strong> 也能发起<strong>工作项</strong>。但这种 Issue 模式不要求负责人、截止时间，甚至主体部分空白都能提交成功；它过于松散，甚至无法更新到<strong>工作台</strong>，从而影响工作效率。因此我们约定：<strong>慎用 Issue 模式</strong>。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://gulab.cn/tags/Gitee/">Gitee</a></li>
+      <li><a href="https://gulab.cn/tags/git/">Git</a></li>
+      <li><a href="https://gulab.cn/tags/%E5%B7%A5%E4%BD%9C%E5%8C%BA/">工作区</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://gulab.cn/post/welcome/">
+    <span class="title">« 上一页</span>
+    <span>欢迎来到 GuLab</span>
+  </a>
+  <a class="next" href="https://gulab.cn/post/From-Hexo-to-Hugo/">
+    <span class="title">下一页 »</span>
+    <span>博客从Hexo迁移至Hugo</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>© 2017-2026 GuLab.cn · 保留所有权利</span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

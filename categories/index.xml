@@ -5,8 +5,37 @@
     <link>https://gulab.cn/categories/</link>
     <description>Recent content in Categories on GuLab.cn</description>
     <generator>Hugo</generator>
-    <language>en-US</language>
-    <copyright>2017-2023 GuLab.cn | All rights reserved.</copyright>
+    <language>zh-CN</language>
+    <copyright>2017-2026 GuLab.cn · 保留所有权利</copyright>
+    <lastBuildDate>Sat, 05 Sep 2026 21:30:00 +0800</lastBuildDate>
     <atom:link href="https://gulab.cn/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客</title>
+      <link>https://gulab.cn/categories/%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sat, 05 Sep 2026 21:30:00 +0800</pubDate>
+      <guid>https://gulab.cn/categories/%E5%8D%9A%E5%AE%A2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>工具</title>
+      <link>https://gulab.cn/categories/%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Fri, 11 Nov 2022 23:25:56 +0800</pubDate>
+      <guid>https://gulab.cn/categories/%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>软件</title>
+      <link>https://gulab.cn/categories/%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Sun, 06 Sep 2020 11:12:48 +0800</pubDate>
+      <guid>https://gulab.cn/categories/%E8%BD%AF%E4%BB%B6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3D打印</title>
+      <link>https://gulab.cn/categories/3D%E6%89%93%E5%8D%B0/</link>
+      <pubDate>Fri, 09 Jun 2017 21:04:48 +0800</pubDate>
+      <guid>https://gulab.cn/categories/3D%E6%89%93%E5%8D%B0/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

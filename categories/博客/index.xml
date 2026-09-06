@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>博客 on GuLab.cn</title>
+    <link>https://gulab.cn/categories/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on GuLab.cn</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>2017-2026 GuLab.cn · 保留所有权利</copyright>
+    <lastBuildDate>Sat, 05 Sep 2026 21:30:00 +0800</lastBuildDate>
+    <atom:link href="https://gulab.cn/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>欢迎来到 GuLab</title>
+      <link>https://gulab.cn/post/welcome/</link>
+      <pubDate>Sat, 05 Sep 2026 21:30:00 +0800</pubDate>
+      <guid>https://gulab.cn/post/welcome/</guid>
+      <description>站点导航：我的研究方向、课程与博客内容分区，帮你快速找到需要的内容。</description>
+    </item>
+  </channel>
+</rss>

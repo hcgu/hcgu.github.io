@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MacOS on GuLab.cn</title>
+    <link>https://gulab.cn/tags/macOS/</link>
+    <description>Recent content in MacOS on GuLab.cn</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>2017-2026 GuLab.cn · 保留所有权利</copyright>
+    <lastBuildDate>Tue, 14 Jul 2020 17:57:42 +0800</lastBuildDate>
+    <atom:link href="https://gulab.cn/tags/macOS/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS开启硬盘NTFS读写功能</title>
+      <link>https://gulab.cn/post/macOS-NTFS/</link>
+      <pubDate>Tue, 14 Jul 2020 17:57:42 +0800</pubDate>
+      <guid>https://gulab.cn/post/macOS-NTFS/</guid>
+      <description>&lt;p&gt;已在 macOS 10.13.6 和 TOSHIBA 移动硬盘测试通过；以下操作仅供测试，操作前建议备份数据。&lt;/p&gt;
+&lt;p&gt;APFS 格式的 macOS 系统默认隐藏了 NTFS 写入功能，一般通过安装 Paragon NTFS、Mounty 等第三方软件来获得读写功能。本教程给出通过 &lt;code&gt;/etc/fstab&lt;/code&gt; 挂载方式直接读写 NTFS 的解决方案。&lt;/p&gt;
+&lt;h2 id=&#34;操作步骤&#34;&gt;操作步骤&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;接入 NTFS 格式的移动硬盘，记录卷标，如 &lt;code&gt;TOSHIBA&lt;/code&gt;；&lt;/li&gt;
+&lt;li&gt;在 Terminal 中输入：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo vi /etc/fstab
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;按 &lt;code&gt;i&lt;/code&gt; 进入编辑模式，输入：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;LABEL=TOSHIBA none ntfs rw,auto,nobrowse
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;分别按 &lt;code&gt;ESC&lt;/code&gt;、&lt;code&gt;:wq&lt;/code&gt; 保存并退出修改；&lt;/li&gt;
+&lt;li&gt;重启 macOS，前往文件夹 &lt;code&gt;/Volume/TOSHIBA&lt;/code&gt;，检查读写性能。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;注意事项&#34;&gt;注意事项&lt;/h2&gt;
+&lt;p&gt;偶尔会发生写入项目（如 file.zip）变成灰色，且拷贝时提示 “不能更改 xx 中的一个或多个项目，因为它们正在使用中” 的警告信息。在 Terminal 中输入：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xattr -d com.apple.FinderInfo file_path
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;其中 &lt;code&gt;file_path&lt;/code&gt; 为 file.zip 对应的目录，灰色文件恢复至正常即可。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

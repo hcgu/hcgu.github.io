@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>记忆 on GuLab.cn</title>
+    <link>https://gulab.cn/tags/%E8%AE%B0%E5%BF%86/</link>
+    <description>Recent content in 记忆 on GuLab.cn</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>2017-2026 GuLab.cn · 保留所有权利</copyright>
+    <lastBuildDate>Sun, 06 Sep 2020 11:12:48 +0800</lastBuildDate>
+    <atom:link href="https://gulab.cn/tags/%E8%AE%B0%E5%BF%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anki最简教程</title>
+      <link>https://gulab.cn/post/anki-intro/</link>
+      <pubDate>Sun, 06 Sep 2020 11:12:48 +0800</pubDate>
+      <guid>https://gulab.cn/post/anki-intro/</guid>
+      <description>&lt;p&gt;本教程在 Windows 10 企业版（版本号 1909，64 位）上测试通过。macOS/Linux/Android/iOS 请自行测试。提示：iOS 版本需付费。&lt;/p&gt;
+&lt;h2 id=&#34;下载最新版-anki-软件&#34;&gt;下载最新版 Anki 软件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;官网&lt;/strong&gt;：英文，最新版，下载慢&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anki 中国&lt;/strong&gt;：中文，镜像，有滞后，下载快&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;anki00.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki00.PNG&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;直接双击安装即可。可能会提示 “OpenGL” 错误等信息，如忽略不影响使用，则不必处理。&lt;/li&gt;
+&lt;li&gt;安装成功后打开软件即可看到主界面。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;anki01.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki01.PNG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;anki02.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki02.PNG&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;注册账号并登录&#34;&gt;注册账号并登录&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;点击&lt;strong&gt;同步&lt;/strong&gt;，弹出注册界面；&lt;/li&gt;
+&lt;li&gt;用刚注册的账号登录；&lt;/li&gt;
+&lt;li&gt;如果服务器（网页）端已经存放了&lt;strong&gt;记忆库&lt;/strong&gt;（又称&lt;strong&gt;牌组&lt;/strong&gt;），则首次登录时自动同步到本地。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;anki03.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki03.PNG&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;新建记忆库或牌组&#34;&gt;新建记忆库（或牌组）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;新建记忆库、牌组，命名为 “demo”；&lt;/li&gt;
+&lt;li&gt;在新记忆库、牌组 demo 中添加卡片：卡片正面为提示内容，如 “傅里叶级数公式”；卡片背面为答案。可使用 LaTeX 语法输入公式（需提前配置 LaTeX 编译环境），也可直接粘贴图片；&lt;/li&gt;
+&lt;li&gt;可持续添加新卡片，卡片内容可以为文本、公式、图片、音频、视频、网页等；&lt;/li&gt;
+&lt;li&gt;可自定义卡片的模板。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;anki04.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki04.PNG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;anki05.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki05.PNG&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;选择记忆库/牌组，点击&lt;strong&gt;开始学习&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;卡片默认显示正面，即提示内容；&lt;/li&gt;
+&lt;li&gt;根据提示给出你的答案，答案给定后，点击&lt;strong&gt;显示答案&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;检查你的答案是否正确：如果&lt;strong&gt;顺利/正确&lt;/strong&gt;，则 Anki 会在 4 天后复习；如果&lt;strong&gt;犹豫/想起&lt;/strong&gt;，则 10 分钟后复习；如果&lt;strong&gt;生疏/错误&lt;/strong&gt;，则 1 分钟后复习。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;anki06.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki06.PNG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;anki07.PNG&#34; loading=&#34;lazy&#34; src=&#34;https://gulab.cn/post/anki-intro/anki07.PNG&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这种设置基于&lt;strong&gt;艾宾浩斯遗忘曲线&lt;/strong&gt;理论，用户可根据自己的情况，对参数 “1 分钟/10 分钟/4 天” 进行调整。&lt;/p&gt;
+&lt;h2 id=&#34;忠告&#34;&gt;忠告&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Anki 只是工具，没有任何神奇功能，只有善于使用、勤奋刻苦，才能有效辅助记忆；&lt;/li&gt;
+&lt;li&gt;内容至上。知识点/错题随手一拍即可复习，痴迷卡牌外观没有意义；&lt;/li&gt;
+&lt;li&gt;九层高台，始于垒土。超市排队、食堂吃饭、课间无聊时，不妨选择 Anki，而不是微博。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

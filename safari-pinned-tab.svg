@@ -1,0 +1,6 @@
+<!-- Safari 固定标签页图标：必须为单色（黑）+ 透明背景 -->
+<!-- 这是 GuLab logo 的几何简化版：对应原 logo 中并排的两个方块 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <rect x="2" y="3" width="5.2" height="10" rx="0.8" />
+  <rect x="8.8" y="3" width="5.2" height="10" rx="0.8" />
+</svg>
